@@ -8,10 +8,10 @@ const projects = [
   {
     id: 1,
     title: 'tabs',
-    description: 'A Next.js app built with TypeScript and Tailwind CSS, deployed on Vercel. Continually evolving with ongoing updates.',
+    description: 'Built for a friend to turn Ultimate Guitar tabs into clean, printable PDFs — with controls for font, spacing, transposition, and autoscroll.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     github: 'https://github.com/wildwastaken/tabs',
-    live: 'https://tabs-mu.vercel.app',
+    live: 'https://allenstabs.netlify.app',
     date: '2025',
     status: 'Updating',
     featured: true
