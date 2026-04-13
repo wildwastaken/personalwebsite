@@ -71,8 +71,8 @@ useEffect(() => {
       .catch(() => {
         setSpotifyData({
           isPlaying: false,
-          title: "The Way You Look Tonight",
-          artist: "Frank Sinatra",
+          title: "",
+          artist: "",
         });
         setIsLoadingSpotify(false);
       });
@@ -186,9 +186,7 @@ useEffect(() => {
                 <p className="text-lg">
                   I'm Allen — a junior at Princeton University studying Computer
                   Science, Economics, and Philosophy. I'm passionate about
-                  technology, literature, and the outdoors, and my studies are
-                  driven by curiosity and a desire to understand how things
-                  work.
+                  technology, literature, and the outdoors.
                 </p>
                 <p className="text-lg">
                   Ever since I built my first program to help my neighbors
@@ -196,9 +194,7 @@ useEffect(() => {
                   make life simpler and more intuitive, whether through
                   software, data, or design. When I'm not studying or coding,
                   you'll probably find me reading, cycling around campus,
-                  exploring nature trails, or sharing food with friends. I've
-                  always believed that curiosity and diverse interests lead to
-                  better ideas and more creative problem-solving.
+                  exploring nature trails, or sharing food with friends.
                 </p>
               </div>
 
@@ -254,7 +250,7 @@ useEffect(() => {
                       <div className="h-4 w-48 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
                     </div>
                   </div>
-                ) : (
+                ) : spotifyData.title ? (
                   <div className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400">
                     <Music className="w-5 h-5 text-green-500 flex-shrink-0" />
                     <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
@@ -284,7 +280,7 @@ useEffect(() => {
                       )}
                     </div>
                   </div>
-                )}
+                ) : null}
               </div>
             </div>
           </div>
