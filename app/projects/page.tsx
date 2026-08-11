@@ -47,7 +47,7 @@ const projects = [
   },
   {
     id: 5,
-    title: 'BareShelves',
+    title: 'bareshelves',
     description: 'A COVID-era tracker that notified people when essential items came back in stock on Amazon. Followed my earlier AmznMonitor work, expanding notifications and heuristics.',
     tech: ['Python', 'Web Scraping', 'Automation', 'Notifications'],
     github: 'https://github.com/wildwastaken/bareshelves-website',
