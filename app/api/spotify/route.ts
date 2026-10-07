@@ -33,16 +33,19 @@ async function getAccessToken() {
   return response.json()
 }
 
+const FALLBACK_TRACK = {
+  isPlaying: false,
+  title: 'The Way You Look Tonight',
+  artist: 'Frank Sinatra',
+  songUrl: 'https://open.spotify.com/track/7iN1keP29oeyvlgglhU304',
+}
+
 export async function GET() {
   try {
     const { access_token } = await getAccessToken() || {}
 
     if (!access_token) {
-      return NextResponse.json({
-        isPlaying: false,
-        title: 'Not configured',
-        artist: 'Add Spotify credentials',
-      })
+      return NextResponse.json(FALLBACK_TRACK)
     }
 
     // Try to get currently playing
@@ -88,17 +91,9 @@ export async function GET() {
       }
     }
 
-    return NextResponse.json({
-      isPlaying: false,
-      title: 'The Way You Look Tonight',
-      artist: 'Frank Sinatra',
-    })
+    return NextResponse.json(FALLBACK_TRACK)
   } catch (error) {
     console.error('Error fetching Spotify data:', error)
-    return NextResponse.json({
-      isPlaying: false,
-      title: 'The Way You Look Tonight',
-      artist: 'Frank Sinatra',
-    })
+    return NextResponse.json(FALLBACK_TRACK)
   }
 }
