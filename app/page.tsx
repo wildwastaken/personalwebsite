@@ -123,7 +123,7 @@ useEffect(() => {
                   Allen Liu
                 </h1>
                 <p className="text-center text-zinc-600 dark:text-zinc-400 mb-6">
-                  Junior at Princeton University
+                  Senior at Princeton University
                 </p>
 
                 {/* Social Links */}
@@ -184,7 +184,7 @@ useEffect(() => {
               </h2>
               <div className="prose prose-xl max-w-none text-zinc-700 dark:text-zinc-300 space-y-6 leading-relaxed">
                 <p className="text-lg">
-                  I'm Allen — a junior at Princeton University studying Computer
+                  I'm Allen — a senior at Princeton University studying Computer
                   Science, Economics, and Philosophy. I'm passionate about
                   technology, literature, and the outdoors.
                 </p>
