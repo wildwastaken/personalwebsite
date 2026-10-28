@@ -1,25 +1,12 @@
-'use client'
-
-import { motion } from 'framer-motion'
-import { Camera } from 'lucide-react'
-
 export default function PhotosHeader() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="space-y-6 mb-16"
-    >
-      <div className="flex items-center space-x-3">
-        <Camera className="w-8 h-8 text-blue-600 dark:text-blue-500" />
-        <h1 className="text-4xl sm:text-5xl font-bold text-zinc-900 dark:text-zinc-100">
-          Places and People
-        </h1>
-      </div>
-      <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl">
-        Moments that I love.
+    <div className="border-b border-[#E6E4D9] dark:border-[#282726] pb-4 space-y-1 mb-8">
+      <h1 className="font-serif text-3xl font-bold tracking-tight text-[#100F0F] dark:text-[#CECDC3]">
+        Photos
+      </h1>
+      <p className="text-sm text-[#6F6E69] dark:text-[#878580]">
+        Peruvian Andes, Canadian Rockies, Iceland, and the White Mountains. Click any photo to expand.
       </p>
-    </motion.div>
+    </div>
   )
 }

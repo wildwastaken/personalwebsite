@@ -1,6 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "photos:prepare": "node scripts/prepare-photos.cjs",
+    "predev": "npm run photos:prepare",
+    "prebuild": "npm run photos:prepare",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -12,7 +15,7 @@
     "framer-motion": "^10.16.0",
     "lucide-react": "^0.292.0",
     "mapbox-gl": "^3.15.0",
-    "next": "latest",
+    "next": "14.2.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-globe.gl": "^2.36.0",
@@ -27,8 +30,9 @@
     "autoprefixer": "^10.4.0",
     "baseline-browser-mapping": "^2.10.18",
     "eslint": "^8.0.0",
-    "eslint-config-next": "latest",
+    "eslint-config-next": "14.2.33",
     "postcss": "^8.4.0",
+    "sharp": "^0.35.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.0"
   }

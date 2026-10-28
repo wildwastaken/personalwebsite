@@ -12,17 +12,21 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark')
+  const [theme, setTheme] = useState<Theme>('light')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)
-    const savedTheme = localStorage.getItem('theme') as Theme | null
-    if (savedTheme) {
-      setTheme(savedTheme)
-    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-      setTheme('light')
+    const p = new URLSearchParams(window.location.search)
+    const q = p.get('theme') as Theme | null
+    if (q === 'light' || q === 'dark') {
+      setTheme(q)
+      if (q === 'dark') document.documentElement.classList.add('dark')
+      else document.documentElement.classList.remove('dark')
+      return
     }
+    const isDark = document.documentElement.classList.contains('dark')
+    setTheme(isDark ? 'dark' : 'light')
   }, [])
 
   useEffect(() => {

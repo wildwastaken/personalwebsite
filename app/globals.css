@@ -3,126 +3,141 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --bg-paper: #FFFCF0;
+    --text-ink: #100F0F;
+    --muted-ink: #6F6E69;
+    --border-ink: #E6E4D9;
+  }
+
+  .dark {
+    --bg-paper: #161615;
+    --text-ink: #CECDC3;
+    --muted-ink: #878580;
+    --border-ink: #282726;
+  }
+
   html {
     scroll-behavior: smooth;
-    cursor: none;
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
   }
 
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Charter', 'Iowan Old Style', 'Palatino', 'Newsreader', Georgia, serif;
+    background-color: var(--bg-paper);
+    color: var(--text-ink);
+    line-height: 1.65;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  a, button {
-    cursor: none !important;
+  ::selection {
+    background-color: #e6e4d9;
+    color: #100F0F;
+  }
+
+  .dark ::selection {
+    background-color: #282726;
+    color: #CECDC3;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--border-ink);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease, color 0.15s ease;
+  }
+
+  a:hover {
+    text-decoration-color: currentColor;
   }
 }
 
 @layer utilities {
+  .landscape-art {
+    --scape-far: #d5ded8;
+    --scape-snow: #f4f2e7;
+    --scape-middle: #bfcec5;
+    --scape-near: #a9beb1;
+    --scape-water: #cedbd1;
+    --scape-bank: #93ad9a;
+    --scape-pine: #718f7c;
+  }
+
+  .dark .landscape-art {
+    --scape-far: #2b3838;
+    --scape-snow: #65716d;
+    --scape-middle: #314442;
+    --scape-near: #395149;
+    --scape-water: #293c39;
+    --scape-bank: #3b5144;
+    --scape-pine: #516855;
+  }
+
+  .landscape-distance {
+    transform: translateY(calc((1 - var(--horizon-progress, 0)) * -24px));
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .landscape-stars { display: none; }
+  .dark .landscape-stars { display: inline; }
+  .landscape-star { opacity: 0.7; animation: star-shimmer 12s ease-in-out infinite alternate; }
+
+  @keyframes star-shimmer {
+    from { opacity: 0.35; }
+    to { opacity: 0.9; }
+  }
+
+  .scroll-tree { animation: tree-rise 3.6s ease-in-out infinite; }
+
+  @keyframes tree-rise {
+    0%, 100% { transform: translateY(1px); opacity: 0.6; }
+    50% { transform: translateY(-2px); opacity: 0.9; }
+  }
+
+  .landscape-foothills {
+    transform: translateY(calc((1 - var(--horizon-progress, 0)) * -12px));
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .landscape-current {
+    animation: lake-current 16s ease-in-out infinite alternate;
+  }
+
+  .landscape-birds {
+    animation: distant-birds 48s linear infinite;
+  }
+
+  @keyframes lake-current {
+    from { transform: translateX(-9px); opacity: 0.4; }
+    to { transform: translateX(9px); opacity: 0.8; }
+  }
+
+  @keyframes distant-birds {
+    0% { transform: translate(0, 0); opacity: 0; }
+    15% { opacity: 0.4; }
+    85% { opacity: 0.4; }
+    100% { transform: translate(160px, -15px); opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .landscape-current, .landscape-birds, .landscape-star, .scroll-tree { animation: none; }
+    .landscape-distance, .landscape-foothills { transition: none; }
+  }
+
   .text-balance {
     text-wrap: balance;
   }
 
-  .custom-cursor {
-    position: fixed;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: white;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: width 0.2s, height 0.2s;
-    z-index: 10000;
-    mix-blend-mode: difference;
+  .font-mono-meta {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.8125rem;
+    letter-spacing: -0.01em;
   }
 
-  .custom-cursor.hover {
-    width: 28px;
-    height: 28px;
-  }
-
-  .nav-glass {
-    margin: 1rem;
-    border-radius: 1rem;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: all 0.3s ease;
-  }
-
-  .dark .nav-glass {
-    background: linear-gradient(
-      135deg,
-      rgba(20, 20, 30, 0.6) 0%,
-      rgba(10, 10, 20, 0.4) 100%
-    );
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-  }
-
-  .liquid-glass a {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .liquid-glass a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-    backdrop-filter: blur(8px);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 0.5rem;
-    z-index: -1;
-  }
-
-  .liquid-glass a:hover::before {
-    opacity: 1;
-  }
-
-  .dark .liquid-glass a::before {
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 255, 255, 0.05) 100%
-    );
-  }
-
-  .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 70%);
-    transform: scale(0);
-    animation: ripple 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-  }
-
-  .dark .ripple {
-    background: radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 70%);
-  }
-
-  @keyframes ripple {
-    from {
-      transform: scale(0);
-      opacity: 1;
-    }
-    to {
-      transform: scale(2);
-      opacity: 0;
-    }
+  .hairline-border {
+    border-color: var(--border-ink);
   }
 }
