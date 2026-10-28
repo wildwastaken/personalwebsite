@@ -1,0 +1,1059 @@
+{
+  "version": 1,
+  "photos": {
+    "adam-banff.jpeg": {
+      "fingerprint": "addeebb6698f0be18cb8c3e1d2651744c660c70ff868eb1fa4c1102f72458a26",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/adam-banff.jpeg",
+      "placeholder": "#677d7d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/adam-banff-addeebb6698f-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 10346
+        },
+        {
+          "src": "/images/gallery/optimized/adam-banff-addeebb6698f-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 36446
+        },
+        {
+          "src": "/images/gallery/optimized/adam-banff-addeebb6698f-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 72984
+        },
+        {
+          "src": "/images/gallery/optimized/adam-banff-addeebb6698f-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 234042
+        }
+      ]
+    },
+    "beaconfalls.jpeg": {
+      "fingerprint": "403e2c35a01b3b538d2196128c5afbd176ffa3519f8fcb39bcf6d9226dcd3028",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/beaconfalls.jpeg",
+      "placeholder": "#475a63",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/beaconfalls-403e2c35a01b-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 7308
+        },
+        {
+          "src": "/images/gallery/optimized/beaconfalls-403e2c35a01b-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 24844
+        },
+        {
+          "src": "/images/gallery/optimized/beaconfalls-403e2c35a01b-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 47848
+        },
+        {
+          "src": "/images/gallery/optimized/beaconfalls-403e2c35a01b-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 165118
+        }
+      ]
+    },
+    "connecticut-coast-fav.jpeg": {
+      "fingerprint": "a4f42f810037e79a65a59fbc5c01bea2953ba61c3c63257e9c091f9832834ad2",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/connecticut-coast-fav.jpeg",
+      "placeholder": "#938167",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 16510
+        },
+        {
+          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 45350
+        },
+        {
+          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 78132
+        },
+        {
+          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 155130
+        }
+      ]
+    },
+    "iceland-gullfoss-fav.jpeg": {
+      "fingerprint": "10eb62e6d260a4912085ed71f2f6dc42b52ed1ebdab7c25b33d76f19b5b35543",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/iceland-gullfoss-fav.jpeg",
+      "placeholder": "#70797d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-gullfoss-fav-10eb62e6d260-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 17224
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-gullfoss-fav-10eb62e6d260-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 75492
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-gullfoss-fav-10eb62e6d260-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 159910
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-gullfoss-fav-10eb62e6d260-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 463334
+        }
+      ]
+    },
+    "iceland-skogafoss-fav.jpeg": {
+      "fingerprint": "5e5709b5fc496052a45e6969061dc5913654e58fc3a3bdb8a3399aa048666085",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/iceland-skogafoss-fav.jpeg",
+      "placeholder": "#9a8d7d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-skogafoss-fav-5e5709b5fc49-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 7170
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-skogafoss-fav-5e5709b5fc49-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28534
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-skogafoss-fav-5e5709b5fc49-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 61948
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-skogafoss-fav-5e5709b5fc49-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 216354
+        }
+      ]
+    },
+    "iceland.jpeg": {
+      "fingerprint": "749459ef3dafe9532948cf7961a884f27f883499b42ecf935141438561cff158",
+      "width": 1600,
+      "height": 657,
+      "originalSrc": "/images/gallery/raw/iceland.jpeg",
+      "placeholder": "#82827b",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-749459ef3daf-320.webp",
+          "width": 320,
+          "height": 131,
+          "bytes": 11012
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-749459ef3daf-640.webp",
+          "width": 640,
+          "height": 263,
+          "bytes": 45848
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-749459ef3daf-960.webp",
+          "width": 960,
+          "height": 394,
+          "bytes": 101274
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-749459ef3daf-1600.webp",
+          "width": 1600,
+          "height": 657,
+          "bytes": 342958
+        }
+      ]
+    },
+    "iceland1.jpeg": {
+      "fingerprint": "80070d03d9cd3df11fdb4171df07aec1fd0dcf46d5d2d1e3fdb5c3ac3bd55c8a",
+      "width": 1600,
+      "height": 1199,
+      "originalSrc": "/images/gallery/raw/iceland1.jpeg",
+      "placeholder": "#5b788e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland1-80070d03d9cd-320.webp",
+          "width": 320,
+          "height": 239,
+          "bytes": 10644
+        },
+        {
+          "src": "/images/gallery/optimized/iceland1-80070d03d9cd-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 38096
+        },
+        {
+          "src": "/images/gallery/optimized/iceland1-80070d03d9cd-960.webp",
+          "width": 960,
+          "height": 719,
+          "bytes": 76648
+        },
+        {
+          "src": "/images/gallery/optimized/iceland1-80070d03d9cd-1600.webp",
+          "width": 1600,
+          "height": 1199,
+          "bytes": 215556
+        }
+      ]
+    },
+    "jasper-rockies-fav.jpeg": {
+      "fingerprint": "02daba6f12893c1927270c7df9734a8198da7eff4b03fbbe82caa492be8155e8",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/jasper-rockies-fav.jpeg",
+      "placeholder": "#8096a7",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/jasper-rockies-fav-02daba6f1289-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 10676
+        },
+        {
+          "src": "/images/gallery/optimized/jasper-rockies-fav-02daba6f1289-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 38332
+        },
+        {
+          "src": "/images/gallery/optimized/jasper-rockies-fav-02daba6f1289-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 79188
+        },
+        {
+          "src": "/images/gallery/optimized/jasper-rockies-fav-02daba6f1289-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 168028
+        }
+      ]
+    },
+    "lafayette-ridge-fav.jpeg": {
+      "fingerprint": "7a6fa629adaa21d805d1f1f932faa5d568e122779ebe3487a2229444f9f19c1e",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/lafayette-ridge-fav.jpeg",
+      "placeholder": "#5e7f9d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/lafayette-ridge-fav-7a6fa629adaa-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 12932
+        },
+        {
+          "src": "/images/gallery/optimized/lafayette-ridge-fav-7a6fa629adaa-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 52288
+        },
+        {
+          "src": "/images/gallery/optimized/lafayette-ridge-fav-7a6fa629adaa-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 112914
+        },
+        {
+          "src": "/images/gallery/optimized/lafayette-ridge-fav-7a6fa629adaa-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 221332
+        }
+      ]
+    },
+    "moraine-lake-fav.jpeg": {
+      "fingerprint": "1602550fde66293c3ccdd6505477b1b87655e04ed28220d3a5526a4cb63fcd9d",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/moraine-lake-fav.jpeg",
+      "placeholder": "#879494",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/moraine-lake-fav-1602550fde66-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11788
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-lake-fav-1602550fde66-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 42838
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-lake-fav-1602550fde66-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 89712
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-lake-fav-1602550fde66-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 275880
+        }
+      ]
+    },
+    "moraine.jpeg": {
+      "fingerprint": "04d15764e4451d90a2cf23bba55e317bf285878fafa5badf78fea0f8151487ba",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/moraine.jpeg",
+      "placeholder": "#638a94",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/moraine-04d15764e445-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 10456
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-04d15764e445-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 48504
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-04d15764e445-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 115798
+        },
+        {
+          "src": "/images/gallery/optimized/moraine-04d15764e445-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 438974
+        }
+      ]
+    },
+    "orient-point-fav.jpeg": {
+      "fingerprint": "a74e80b81bd0a70d4b7d21c5044d251924ab114fc32a5ad43e192353a371aa8f",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/orient-point-fav.jpeg",
+      "placeholder": "#8a8c9a",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/orient-point-fav-a74e80b81bd0-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 19228
+        },
+        {
+          "src": "/images/gallery/optimized/orient-point-fav-a74e80b81bd0-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 73224
+        },
+        {
+          "src": "/images/gallery/optimized/orient-point-fav-a74e80b81bd0-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 149994
+        },
+        {
+          "src": "/images/gallery/optimized/orient-point-fav-a74e80b81bd0-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 286770
+        }
+      ]
+    },
+    "pemi-loop-mark.jpeg": {
+      "fingerprint": "ff666ebbd35ee77deeae9dd0b0418b61d47020995d688f163c7d118490792ce3",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/pemi-loop-mark.jpeg",
+      "placeholder": "#8093a2",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/pemi-loop-mark-ff666ebbd35e-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11306
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-mark-ff666ebbd35e-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 41402
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-mark-ff666ebbd35e-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 89614
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-mark-ff666ebbd35e-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 310050
+        }
+      ]
+    },
+    "pemi-loop.jpeg": {
+      "fingerprint": "30f901e056437ab2a7e9278942ae040d813b201216865a16f92fe94a6c79c7f3",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/pemi-loop.jpeg",
+      "placeholder": "#736c5e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 9526
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 28834
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 54622
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 118000
+        }
+      ]
+    },
+    "pemi-loop1.jpeg": {
+      "fingerprint": "260f0eaa229a6671f0b9916752ac2aca99d78a79052b2a2a19d153fe3a83f79f",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/pemi-loop1.jpeg",
+      "placeholder": "#656d7e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/pemi-loop1-260f0eaa229a-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 4646
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop1-260f0eaa229a-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 18398
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop1-260f0eaa229a-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 38324
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop1-260f0eaa229a-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 137344
+        }
+      ]
+    },
+    "pemi-loop2.jpeg": {
+      "fingerprint": "de337185c3b2ef9ca72d9acf63ec69f91759a55dc1ad80ffd4d03a0d641880ad",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/pemi-loop2.jpeg",
+      "placeholder": "#5f4f4b",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/pemi-loop2-de337185c3b2-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 12240
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop2-de337185c3b2-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 39580
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop2-de337185c3b2-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 73096
+        },
+        {
+          "src": "/images/gallery/optimized/pemi-loop2-de337185c3b2-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 146698
+        }
+      ]
+    },
+    "peru-cusco-plaza.jpeg": {
+      "fingerprint": "ff277d367c8e2c1540feb7d40d2f9e2afdc130d5d82de7ebe380ed920e5a1eb5",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-cusco-plaza.jpeg",
+      "placeholder": "#917567",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 13182
+        },
+        {
+          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 40278
+        },
+        {
+          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 74782
+        },
+        {
+          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 223776
+        }
+      ]
+    },
+    "peru-high-andes-pass.jpeg": {
+      "fingerprint": "355480b4c038c9ea4eb58de563a071ee7c1e9a19a0a44b0e9b0edd4c03aa4f22",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-high-andes-pass.jpeg",
+      "placeholder": "#7b7f7d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-high-andes-pass-355480b4c038-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 20142
+        },
+        {
+          "src": "/images/gallery/optimized/peru-high-andes-pass-355480b4c038-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 81196
+        },
+        {
+          "src": "/images/gallery/optimized/peru-high-andes-pass-355480b4c038-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 172756
+        },
+        {
+          "src": "/images/gallery/optimized/peru-high-andes-pass-355480b4c038-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 335722
+        }
+      ]
+    },
+    "peru-humantay-trail-horses.jpeg": {
+      "fingerprint": "0dedbf545794d86f068129a2c70f775ebc361f1a4344bd0b7e18d8c0052efc1e",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-humantay-trail-horses.jpeg",
+      "placeholder": "#7f7771",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 15202
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 56292
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 116102
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 353236
+        }
+      ]
+    },
+    "peru-machu-picchu-citadel.jpeg": {
+      "fingerprint": "a3b3309d4a980cae2905294a4596a4220a44ad1c4385fd709f7d20c2ab672176",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-machu-picchu-citadel.jpeg",
+      "placeholder": "#939280",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-citadel-a3b3309d4a98-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11150
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-citadel-a3b3309d4a98-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 41978
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-citadel-a3b3309d4a98-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 88128
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-citadel-a3b3309d4a98-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 287764
+        }
+      ]
+    },
+    "peru-machu-picchu-clouds.jpeg": {
+      "fingerprint": "7a3b4612d1f6258019892f6362f065aa2b4b6dd2cdfd682d2b029cc2e23f7251",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-machu-picchu-clouds.jpeg",
+      "placeholder": "#7a878e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 5598
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 21218
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 45274
+        },
+        {
+          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 161172
+        }
+      ]
+    },
+    "peru-ollantaytambo-terraces.jpeg": {
+      "fingerprint": "46f295a30a8895a79017b948670428d3508e0890368b17f706114af1a39abc99",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-ollantaytambo-terraces.jpeg",
+      "placeholder": "#6e7e8b",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 13908
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 53552
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 112328
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 358590
+        }
+      ]
+    },
+    "peru-salkantay-horse-trek.jpeg": {
+      "fingerprint": "ac345515061a1bb1d0762b342adb352fb18864e83048c72ff6fd2eb648f331d5",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-salkantay-horse-trek.jpeg",
+      "placeholder": "#838480",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-horse-trek-ac345515061a-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 28306
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-horse-trek-ac345515061a-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 104598
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-horse-trek-ac345515061a-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 212704
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-horse-trek-ac345515061a-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 395370
+        }
+      ]
+    },
+    "peru-salkantay-pack-mule.jpeg": {
+      "fingerprint": "ab9dbe7d7403202386a82710180a850f42ba53697b8e5c30a189027419d2a4f9",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-salkantay-pack-mule.jpeg",
+      "placeholder": "#938d84",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 25042
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 76192
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 130090
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 250220
+        }
+      ]
+    },
+    "peru-salkantay-trail-allen.jpeg": {
+      "fingerprint": "98f5d0c568b8794cdb178c1792643361ed58a82a4e02612c9339cc1e2dd2c27f",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-salkantay-trail-allen.jpeg",
+      "placeholder": "#8d8b86",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 29258
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 108958
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 218252
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 406332
+        }
+      ]
+    },
+    "peru-salkantay-valley-vista.jpeg": {
+      "fingerprint": "2a67f11a015a518b599cb2d37115c6a241f5cc36fbf046917729600245323df7",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-salkantay-valley-vista.jpeg",
+      "placeholder": "#6e7675",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-valley-vista-2a67f11a015a-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 14238
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-valley-vista-2a67f11a015a-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 51170
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-valley-vista-2a67f11a015a-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 101090
+        },
+        {
+          "src": "/images/gallery/optimized/peru-salkantay-valley-vista-2a67f11a015a-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 203358
+        }
+      ]
+    },
+    "princeton-campus-fav 2.jpeg": {
+      "fingerprint": "646805967cddb03a0467606a324943ecb1efc81bb8e0def6ccecabbbcd1a865b",
+      "width": 1536,
+      "height": 2048,
+      "originalSrc": "/images/gallery/princeton-campus-fav%202.jpeg",
+      "placeholder": "#766f69",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 7826
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 18700
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 30146
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-1600.webp",
+          "width": 1536,
+          "height": 2048,
+          "bytes": 77668
+        }
+      ]
+    },
+    "princeton-campus-fav.jpeg": {
+      "fingerprint": "f38cb2744d00256d62af59403c8db93e3a032e4d1bd4ee89300184c0d4d7b2ad",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/princeton-campus-fav.jpeg",
+      "placeholder": "#767068",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 7844
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 18616
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 29648
+        },
+        {
+          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 55354
+        }
+      ]
+    },
+    "whistler-powder-fav.jpeg": {
+      "fingerprint": "ecec11d114f52efd83bad8b8dbf4d7d05df6473fa0be2e7305f9f8c5214e4e40",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/whistler-powder-fav.jpeg",
+      "placeholder": "#6a7c88",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/whistler-powder-fav-ecec11d114f5-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 17424
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-powder-fav-ecec11d114f5-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 64760
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-powder-fav-ecec11d114f5-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 135164
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-powder-fav-ecec11d114f5-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 419730
+        }
+      ]
+    },
+    "whistler.jpeg": {
+      "fingerprint": "83b456e9d25b701c9e6e8adfd5c4d655bb9cf76ad6b05b885b44e5075575ff82",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/whistler.jpeg",
+      "placeholder": "#657ea1",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/whistler-83b456e9d25b-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 9706
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-83b456e9d25b-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 37992
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-83b456e9d25b-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 82178
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-83b456e9d25b-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 272842
+        }
+      ]
+    },
+    "whistler1.jpeg": {
+      "fingerprint": "1163908ca9f03fd84a8d6dc0b6b38293d5c2ac296e39653169b84670f9f75fb8",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/whistler1.jpeg",
+      "placeholder": "#6a7b88",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 17542
+        },
+        {
+          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 65146
+        },
+        {
+          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 136238
+        },
+        {
+          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 433704
+        }
+      ]
+    }
+  },
+  "aliases": {
+    "adam-banff 2.jpeg": "adam-banff.jpeg",
+    "beaconfalls 2.jpeg": "beaconfalls.jpeg",
+    "connecticut-coast-fav 2.jpeg": "connecticut-coast-fav.jpeg",
+    "iceland 2.jpeg": "iceland.jpeg",
+    "iceland-gullfoss-fav 2.jpeg": "iceland-gullfoss-fav.jpeg",
+    "iceland-skogafoss-fav 2.jpeg": "iceland-skogafoss-fav.jpeg",
+    "iceland1 2.jpeg": "iceland1.jpeg",
+    "jasper-rockies-fav 2.jpeg": "jasper-rockies-fav.jpeg",
+    "lafayette-ridge-fav 2.jpeg": "lafayette-ridge-fav.jpeg",
+    "moraine 2.jpeg": "moraine.jpeg",
+    "moraine-lake-fav 2.jpeg": "moraine-lake-fav.jpeg",
+    "orient-point-fav 2.jpeg": "orient-point-fav.jpeg",
+    "pemi-loop 2.jpeg": "pemi-loop.jpeg",
+    "pemi-loop-mark 2.jpeg": "pemi-loop-mark.jpeg",
+    "pemi-loop1 2.jpeg": "pemi-loop1.jpeg",
+    "pemi-loop2 2.jpeg": "pemi-loop2.jpeg",
+    "peru-cusco-plaza 2.jpeg": "peru-cusco-plaza.jpeg",
+    "peru-high-andes-pass 2.jpeg": "peru-high-andes-pass.jpeg",
+    "peru-humantay-trail-horses 2.jpeg": "peru-humantay-trail-horses.jpeg",
+    "peru-machu-picchu-citadel 2.jpeg": "peru-machu-picchu-citadel.jpeg",
+    "peru-machu-picchu-clouds 2.jpeg": "peru-machu-picchu-clouds.jpeg",
+    "peru-ollantaytambo-terraces 2.jpeg": "peru-ollantaytambo-terraces.jpeg",
+    "peru-salkantay-horse-trek 2.jpeg": "peru-salkantay-horse-trek.jpeg",
+    "peru-salkantay-pack-mule 2.jpeg": "peru-salkantay-pack-mule.jpeg",
+    "peru-salkantay-trail-allen 2.jpeg": "peru-salkantay-trail-allen.jpeg",
+    "peru-salkantay-valley-vista 2.jpeg": "peru-salkantay-valley-vista.jpeg",
+    "whistler 2.jpeg": "whistler.jpeg",
+    "whistler-powder-fav 2.jpeg": "whistler-powder-fav.jpeg",
+    "whistler1 2.jpeg": "whistler1.jpeg"
+  }
+}

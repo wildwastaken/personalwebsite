@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider'
-import CustomCursor from '@/components/CustomCursor'
+
 export const metadata: Metadata = {
   title: 'Allen Liu',
-  description: 'Senior at Princeton University. Book worm, nature enthusiast, and chess fanatic.',
-  keywords: ['Allen Liu', 'Princeton University', 'Developer', 'Student'],
+  description: 'Projects, hikes, and photos. Senior at Princeton University.',
+  keywords: ['Allen Liu', 'Princeton University', 'Projects', 'Hikes', 'Photos', 'Software'],
   authors: [{ name: 'Allen Liu' }],
   openGraph: {
     title: 'Allen Liu',
-    description: 'Senior at Princeton University. Book worm, nature enthusiast, and chess fanatic.',
+    description: 'Projects, hikes, and photos. Senior at Princeton University.',
     type: 'website',
   },
 }
@@ -22,13 +22,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-sans bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen transition-colors">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var p=new URLSearchParams(window.location.search);var q=p.get('theme');var t=q||localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){}})();`,
+          }}
+        />
+      </head>
+      <body className="bg-[#FFFCF0] dark:bg-[#161615] text-[#100F0F] dark:text-[#CECDC3] min-h-screen selection:bg-[#E6E4D9] dark:selection:bg-[#282726] selection:text-[#100F0F] dark:selection:text-[#CECDC3]">
         <ThemeProvider>
-          <CustomCursor />
-          <Navigation />
-          <main className="pt-24">
-            {children}
-          </main>
+          <div className="max-w-4xl mx-auto px-5 sm:px-8 py-5 sm:py-7 min-h-screen flex flex-col">
+            <Navigation />
+            <main className="flex-1 flex flex-col">
+              {children}
+            </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>

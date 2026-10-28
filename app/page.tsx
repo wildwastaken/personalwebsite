@@ -1,308 +1,290 @@
-"use client";
+'use client'
 
-import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Music, Activity, BookOpen, Book } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import PixelScape from '@/components/PixelScape'
 
 interface SpotifyData {
-  isPlaying: boolean;
-  title: string;
-  artist: string;
-  album?: string;
-  albumImageUrl?: string;
-  songUrl?: string;
+  isPlaying: boolean
+  title: string
+  artist: string
+  album?: string
+  albumImageUrl?: string
+  songUrl?: string
 }
 
 interface ReadingData {
-  isReading: boolean;
-  title: string;
-  author: string;
-  bookUrl: string;
-  coverImage: string;
+  isReading: boolean
+  title: string
+  author: string
+  bookUrl: string
+  coverImage?: string
 }
 
 export default function Home() {
-  const [lastUpdated, setLastUpdated] = useState<string>("");
+  const [lastUpdated, setLastUpdated] = useState<string>('')
   const [spotifyData, setSpotifyData] = useState<SpotifyData>({
     isPlaying: false,
-    title: "Loading...",
-    artist: "",
-  });
+    title: 'Loading...',
+    artist: '',
+  })
   const [readingData, setReadingData] = useState<ReadingData>({
     isReading: false,
-    title: "Loading...",
-    author: "",
-    bookUrl: "",
-    coverImage: "",
-  });
-  const [isLoadingSpotify, setIsLoadingSpotify] = useState(true);
-  const [isLoadingReading, setIsLoadingReading] = useState(true);
-  const [isLoadingLastUpdated, setIsLoadingLastUpdated] = useState(true);
+    title: 'Loading...',
+    author: '',
+    bookUrl: '',
+  })
+  const [isLoadingSpotify, setIsLoadingSpotify] = useState(true)
+  const [isLoadingReading, setIsLoadingReading] = useState(true)
 
-useEffect(() => {
-    // Fetch last updated from git
-    fetch("/api/last-updated")
+  useEffect(() => {
+    fetch('/api/last-updated')
+      .then((res) => res.json())
+      .then((data) => setLastUpdated(data.lastUpdated))
+      .catch(() => setLastUpdated(''))
+
+    fetch('/api/spotify')
       .then((res) => res.json())
       .then((data) => {
-        setLastUpdated(data.lastUpdated);
-        setIsLoadingLastUpdated(false);
-      })
-      .catch(() => {
-        const now = new Date();
-        setLastUpdated(
-          now.toLocaleDateString("en-US", {
-            month: "long",
-            day: "numeric",
-            year: "numeric",
-          }),
-        );
-        setIsLoadingLastUpdated(false);
-      });
-
-    // Fetch Spotify data
-    fetch("/api/spotify")
-      .then((res) => res.json())
-      .then((data) => {
-        setSpotifyData(data);
-        setIsLoadingSpotify(false);
+        setSpotifyData(data)
+        setIsLoadingSpotify(false)
       })
       .catch(() => {
         setSpotifyData({
           isPlaying: false,
-          title: "",
-          artist: "",
-        });
-        setIsLoadingSpotify(false);
-      });
+          title: 'Sun (Instrumental)',
+          artist: 'Sleeping At Last',
+        })
+        setIsLoadingSpotify(false)
+      })
 
-    // Fetch reading data
-    fetch("/api/reading")
+    fetch('/api/reading')
       .then((res) => res.json())
       .then((data) => {
-        setReadingData(data);
-        setIsLoadingReading(false);
+        setReadingData(data)
+        setIsLoadingReading(false)
       })
       .catch(() => {
         setReadingData({
           isReading: false,
-          title: "Nothing currently",
-          author: "",
-          bookUrl: "",
-          coverImage: "",
-        });
-        setIsLoadingReading(false);
-      });
-  }, []);
+          title: 'The Cost of Discipleship',
+          author: 'Dietrich Bonhoeffer',
+          bookUrl: 'https://hardcover.app/@allenliu/',
+        })
+        setIsLoadingReading(false)
+      })
+  }, [])
 
   return (
-    <div className="min-h-screen px-6 py-20">
-      <div className="max-w-6xl mx-auto">
-        {/* Hero Section with Profile */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-20"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-            {/* Profile Card */}
-            <div className="md:col-span-1">
-              <div className="bg-zinc-100 dark:bg-zinc-900 rounded-2xl p-8 border border-zinc-200 dark:border-zinc-800 transition-transform hover:scale-[1.02] duration-300">
-                <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-zinc-200 dark:bg-zinc-800">
-                  <Image
-                    src="/images/pfp.png"
-                    alt="Allen Liu"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                <h1 className="text-3xl font-bold text-center mb-2 text-zinc-900 dark:text-zinc-100">
-                  Allen Liu
-                </h1>
-                <p className="text-center text-zinc-600 dark:text-zinc-400 mb-6">
-                  Senior at Princeton University
-                </p>
+    <div className="relative flex w-full flex-1 flex-col justify-between py-1">
+      {/* Pixel Horizon Anchored to Bottom Screen Edge */}
+      <PixelScape currentScape="andes" />
 
-                {/* Social Links */}
-                <div className="space-y-3">
-                  <Link
-                    href="https://github.com/wildwastaken"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all duration-300 hover:scale-105 hover:translate-x-1"
-                  >
-                    <Github className="w-4 h-4" />
-                    <span>GitHub</span>
-                  </Link>
-                  <Link
-                    href="https://www.linkedin.com/in/allenliuct/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400 hover:text-[#0A66C2] dark:hover:text-[#0A66C2] transition-all duration-300 hover:scale-105 hover:translate-x-1"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                    <span>LinkedIn</span>
-                  </Link>
-                  <Link
-                    href="https://www.strava.com/athletes/104181021"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400 hover:text-orange-500 dark:hover:text-orange-400 transition-all duration-300 hover:scale-105 hover:translate-x-1"
-                  >
-                    <Activity className="w-4 h-4" />
-                    <span>Strava</span>
-                  </Link>
-                  <Link
-                    href="https://hardcover.app/@allenliu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400 hover:text-purple-500 dark:hover:text-purple-400 transition-all duration-300 hover:scale-105 hover:translate-x-1"
-                  >
-                    <Book className="w-4 h-4" />
-                    <span>My Books</span>
-                  </Link>
-                  <Link
-                    href="mailto:allenliu@princeton.edu"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-all duration-300 hover:scale-105 hover:translate-x-1"
-                  >
-                    <Mail className="w-4 h-4" />
-                    <span>allenliu@princeton.edu</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Bio */}
-            <div className="md:col-span-2">
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-zinc-900 dark:text-zinc-100">
-                Hi, I'm Allen!
-              </h2>
-              <div className="prose prose-xl max-w-none text-zinc-700 dark:text-zinc-300 space-y-6 leading-relaxed">
-                <p className="text-lg">
-                  I'm Allen — a senior at Princeton University studying Computer
-                  Science, Economics, and Philosophy. I'm passionate about
-                  technology, literature, and the outdoors.
-                </p>
-                <p className="text-lg">
-                  Ever since I built my first program to help my neighbors
-                  during the pandemic, I've learned to enjoy building tools that
-                  make life simpler and more intuitive, whether through
-                  software, data, or design. When I'm not studying or coding,
-                  you'll probably find me reading, cycling around campus,
-                  exploring nature trails, or sharing food with friends.
-                </p>
-              </div>
-
-              {/* Currently Reading Widget */}
-              <div className="mt-8 pt-6 border-t border-zinc-200 dark:border-zinc-800">
-                {isLoadingReading ? (
-                  <div className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400">
-                    <div className="w-5 h-5 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-4 w-32 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                      <div className="h-4 w-48 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400">
-                    <BookOpen className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                      <span className="text-sm">
-                        {readingData.isReading
-                          ? "Currently reading"
-                          : "Not reading anything"}
-                        :
-                      </span>
-                      {readingData.bookUrl ? (
-                        <a
-                          href={readingData.bookUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-medium text-zinc-900 dark:text-zinc-100 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
-                        >
-                          {readingData.title}
-                        </a>
-                      ) : (
-                        <span className="font-medium text-zinc-900 dark:text-zinc-100">
-                          {readingData.title}
-                        </span>
-                      )}
-                      {readingData.author && (
-                        <span className="text-sm">by {readingData.author}</span>
-                      )}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Spotify Widget */}
-              <div className="mt-6 pt-6 border-t border-zinc-200 dark:border-zinc-800">
-                {isLoadingSpotify ? (
-                  <div className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400">
-                    <div className="w-5 h-5 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-4 w-32 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                      <div className="h-4 w-48 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
-                    </div>
-                  </div>
-                ) : spotifyData.title ? (
-                  <div className="flex items-center space-x-3 text-zinc-600 dark:text-zinc-400">
-                    <Music className="w-5 h-5 text-green-500 flex-shrink-0" />
-                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                      <span className="text-sm">
-                        {spotifyData.isPlaying
-                          ? "Currently listening to"
-                          : "Last listened to"}
-                        :
-                      </span>
-                      {spotifyData.songUrl ? (
-                        <a
-                          href={spotifyData.songUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-medium text-zinc-900 dark:text-zinc-100 hover:text-green-600 dark:hover:text-green-400 transition-all duration-300"
-                        >
-                          {spotifyData.title}
-                        </a>
-                      ) : (
-                        <span className="font-medium text-zinc-900 dark:text-zinc-100">
-                          {spotifyData.title}
-                        </span>
-                      )}
-                      <span className="text-sm">by {spotifyData.artist}</span>
-                      {spotifyData.isPlaying && (
-                        <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                      )}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
+      {/* Main Content Area */}
+      <div className="relative z-10 w-full space-y-6 sm:space-y-8">
+        {/* Intro Header: Bigger & Higher-Res Profile Photo + Identity */}
+        {/* On phones the photo sits beside the name and the prose spans the full width below. */}
+        <section className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 gap-y-4 sm:gap-x-7">
+          {/* Prominent High-Res Profile Photo */}
+          <div className="flex-shrink-0">
+            <div className="border border-[#E6E4D9] dark:border-[#282726] p-1 sm:p-1.5 bg-white dark:bg-[#1C1B1A] rounded-md shadow-sm">
+              <Image
+                src="/images/pfp.png"
+                alt="Allen Liu"
+                width={192}
+                height={192}
+                sizes="(max-width: 639px) 96px, (max-width: 767px) 176px, 192px"
+                className="w-24 h-24 sm:w-44 sm:h-44 md:w-48 md:h-48 object-cover rounded block"
+                priority
+              />
             </div>
           </div>
-        </motion.div>
 
-        {/* Footer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center text-zinc-500 dark:text-zinc-500 text-sm py-8 border-t border-zinc-200 dark:border-zinc-800"
-        >
-          {isLoadingLastUpdated ? (
-            <div className="flex items-center justify-center space-x-2">
-              <span>Last updated:</span>
-              <div className="h-4 w-32 bg-zinc-300 dark:bg-zinc-700 rounded animate-pulse"></div>
+          {/* Name, Subtitle & Direct Links */}
+          <div className="contents sm:block sm:space-y-3">
+            <div>
+              <h1 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight text-[#100F0F] dark:text-[#CECDC3]">
+                Allen Liu
+              </h1>
+              <p className="font-mono text-xs text-[#6F6E69] dark:text-[#878580] mt-1">
+                <span className="block sm:inline">Senior at Princeton University</span>
+                <span className="hidden sm:inline"> • </span>
+                <span className="block sm:inline">Computer Science, Economics &amp; Philosophy</span>
+              </p>
             </div>
-          ) : (
-            <p>Last updated: {lastUpdated}</p>
-          )}
-        </motion.div>
+
+            <p className="col-span-2 text-base text-[#282726] dark:text-[#D4D2C9] leading-relaxed">
+              I build simple software tools, study economic mechanisms and ethics, and hike alpine trails.
+              I care about software that is direct, purposeful, and free of unnecessary bloat.
+            </p>
+
+            {/* Direct Links (resume removed as requested) */}
+            <div className="col-span-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 font-mono text-xs sm:pt-1">
+              <a
+                href="https://github.com/wildwastaken"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-[#100F0F] dark:text-[#CECDC3]"
+              >
+                github ↗
+              </a>
+              <span className="text-[#6F6E69] dark:text-[#878580]">•</span>
+              <a
+                href="https://www.linkedin.com/in/allenliuct/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-[#100F0F] dark:text-[#CECDC3]"
+              >
+                linkedin ↗
+              </a>
+              <span className="text-[#6F6E69] dark:text-[#878580]">•</span>
+              <a
+                href="https://www.strava.com/athletes/104181021"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-[#100F0F] dark:text-[#CECDC3]"
+              >
+                strava ↗
+              </a>
+              <span className="text-[#6F6E69] dark:text-[#878580]">•</span>
+              <a
+                href="https://hardcover.app/@allenliu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-[#100F0F] dark:text-[#CECDC3]"
+              >
+                books ↗
+              </a>
+              <span className="text-[#6F6E69] dark:text-[#878580]">•</span>
+              <a
+                href="mailto:allenliu@princeton.edu"
+                className="hover:underline text-[#100F0F] dark:text-[#CECDC3]"
+              >
+                email ↗
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Authentic About Prose */}
+        <section className="bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[3px] border border-[#E6E4D9]/80 dark:border-[#282726]/80 p-3 sm:p-3.5 rounded-sm leading-relaxed text-[14px] sm:text-[14.5px] text-[#282726] dark:text-[#D4D2C9]">
+          <p>
+            I first learned to write software during the pandemic building stock checkers and notification bots for neighbors in Connecticut. At Princeton, I study computer systems, economics, and moral philosophy, and hike alpine passes across Peru, the Canadian Rockies, and Iceland. Outside coursework and terminal, I spend time cycling country roads, reading theology and literature, or cooking with close friends.
+          </p>
+        </section>
+
+        {/* Recent Trips Section */}
+        <section className="space-y-2">
+          <div className="flex items-baseline justify-between border-b border-[#E6E4D9] dark:border-[#282726] pb-1">
+            <h2 className="font-serif text-base sm:text-lg font-bold tracking-tight text-[#100F0F] dark:text-[#CECDC3]">
+              Recent Trips
+            </h2>
+            <Link
+              href="/hikes"
+              className="font-mono text-xs text-[#6F6E69] dark:text-[#878580] hover:text-[#100F0F] dark:hover:text-[#CECDC3]"
+            >
+              all hikes &rarr;
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <Link href="/hikes?trip=STA-02" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+              <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
+                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Peruvian Andes • 4,630m</span>
+                <span>Dec 2025</span>
+              </div>
+              <h3 className="font-serif text-sm font-bold text-[#100F0F] dark:text-[#CECDC3]">
+                <span className="group-hover:underline">
+                  Salkantay Pass &amp; Machu Picchu
+                </span>
+              </h3>
+              <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
+                High-altitude pass beneath Mount Salkantay, descending through cloud forests and Incan stone terraces.
+              </p>
+            </Link>
+
+            <Link href="/hikes?trip=STA-03" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+              <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
+                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Canadian Rockies • 2,611m</span>
+                <span>Summer 2024</span>
+              </div>
+              <h3 className="font-serif text-sm font-bold text-[#100F0F] dark:text-[#CECDC3]">
+                <span className="group-hover:underline">
+                  Sentinel Pass &amp; Moraine Lake
+                </span>
+              </h3>
+              <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
+                Climbing above Larch Valley to one of Banff’s highest maintained passes beneath Mount Temple.
+              </p>
+            </Link>
+          </div>
+        </section>
+      </div>
+
+      <div className="relative z-10 mt-6 w-full space-y-3">
+        <footer className="w-full rounded-sm border border-[#E6E4D9]/80 dark:border-[#282726]/80 bg-[#FFFCF0]/90 dark:bg-[#161615]/90 backdrop-blur-[3px] p-3 sm:p-3.5">
+          <div className="border-b border-[#E6E4D9]/70 dark:border-[#282726]/70 pb-3 mb-4">
+            <h2 className="font-serif text-base text-[#100F0F] dark:text-[#CECDC3]">Currently</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-8">
+            <div className="min-w-0 space-y-1.5">
+              <div className="flex items-center gap-2.5 font-mono text-[10px] uppercase tracking-widest text-[#6F6E69] dark:text-[#878580]">
+                <span>{spotifyData.isPlaying ? 'Listening now' : 'Last played'}</span>
+                {spotifyData.isPlaying && (
+                  <span className="inline-flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 tracking-normal normal-case">
+                    <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden="true" /> live
+                  </span>
+                )}
+              </div>
+              {isLoadingSpotify ? (
+                <p className="text-xs text-[#6F6E69] dark:text-[#878580]">Fetching stream…</p>
+              ) : spotifyData.title ? (
+                <>
+                  <p className="font-serif text-sm leading-relaxed text-[#100F0F] dark:text-[#CECDC3] break-words">
+                    {spotifyData.songUrl ? (
+                      <a href={spotifyData.songUrl} target="_blank" rel="noopener noreferrer" className="no-underline hover:underline underline-offset-4">
+                        {spotifyData.title}
+                      </a>
+                    ) : spotifyData.title}
+                  </p>
+                  {spotifyData.artist && <p className="text-xs text-[#6F6E69] dark:text-[#878580]">by {spotifyData.artist}</p>}
+                </>
+              ) : (
+                <p className="text-xs text-[#6F6E69] dark:text-[#878580]">Offline</p>
+              )}
+            </div>
+            <div className="min-w-0 space-y-1.5">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-[#6F6E69] dark:text-[#878580]">On my desk</p>
+              {isLoadingReading ? (
+                <p className="text-xs text-[#6F6E69] dark:text-[#878580]">Fetching book…</p>
+              ) : readingData.title ? (
+                <>
+                  <p className="font-serif text-sm italic leading-relaxed text-[#100F0F] dark:text-[#CECDC3]">
+                    {readingData.bookUrl ? (
+                      <a href={readingData.bookUrl} target="_blank" rel="noopener noreferrer" className="no-underline hover:underline underline-offset-4">
+                        {readingData.title}
+                      </a>
+                    ) : readingData.title}
+                  </p>
+                  {readingData.author && <p className="text-xs text-[#6F6E69] dark:text-[#878580]">by {readingData.author}</p>}
+                </>
+              ) : (
+                <p className="text-xs text-[#6F6E69] dark:text-[#878580]">Nothing recorded</p>
+              )}
+            </div>
+          </div>
+        </footer>
+        <div className="flex min-h-6 items-center justify-between gap-4 font-mono text-[10px] text-[#6F6E69] dark:text-[#878580]">
+          <span>{lastUpdated && <>Last updated {lastUpdated}</>}</span>
+          <span className="inline-flex shrink-0 items-center gap-2 text-[#718F7C] dark:text-[#9BAA93]">
+            <svg className="scroll-tree h-5 w-3.5" viewBox="0 0 18 26" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M9 2 5 8h2L3 14h3l-4 6h14l-4-6h3l-4-6h2L9 2Z M9 20v4" />
+            </svg>
+            <span>scroll to reveal</span>
+          </span>
+        </div>
       </div>
     </div>
-  );
+  )
 }
