@@ -4,6 +4,9 @@ import path from 'path'
 
 export const dynamic = 'force-dynamic'
 
+const escapeHtml = (value: string) =>
+  value.replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char] as string)
+
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const code = searchParams.get('code')
@@ -14,7 +17,7 @@ export async function GET(request: Request) {
       <html>
         <body style="font-family: system-ui; background: #121212; color: #fff; text-align: center; padding: 50px;">
           <h2 style="color: #ef4444;">Spotify Authorization Cancelled or Failed</h2>
-          <p>${error}</p>
+          <p>${escapeHtml(error)}</p>
           <a href="/spotify-setup" style="color: #1DB954;">Try Again</a>
         </body>
       </html>
@@ -57,7 +60,7 @@ export async function GET(request: Request) {
       <html>
         <body style="font-family: system-ui; background: #121212; color: #fff; text-align: center; padding: 50px;">
           <h2 style="color: #ef4444;">Failed to Exchange Token</h2>
-          <pre style="background: #242424; padding: 15px; border-radius: 8px; text-align: left; max-width: 600px; margin: 20px auto;">${JSON.stringify(data, null, 2)}</pre>
+          <pre style="background: #242424; padding: 15px; border-radius: 8px; text-align: left; max-width: 600px; margin: 20px auto;">${escapeHtml(JSON.stringify(data, null, 2))}</pre>
           <a href="/spotify-setup" style="color: #1DB954;">Back to Spotify Setup</a>
         </body>
       </html>
