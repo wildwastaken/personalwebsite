@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import GalleryImage from '@/components/GalleryImage'
 import PhotoViewer from '@/components/PhotoViewer'
 import type { Photo } from '@/lib/getPhotos'
@@ -15,8 +15,41 @@ const CATEGORIES = [
   { id: 'rockies', label: 'Canadian Rockies' },
   { id: 'iceland', label: 'Iceland' },
   { id: 'white-mountains', label: 'White Mountains' },
-  { id: 'pnw', label: 'Pacific Northwest' },
+  { id: 'whistler', label: 'Whistler' },
+  { id: 'cape-breton', label: 'Cape Breton' },
+  { id: 'northeast', label: 'Close to home' },
 ]
+
+const COLUMN_BREAKPOINTS: [number, number][] = [[1024, 4], [768, 3], [640, 2]]
+const ASPECT_HEIGHT = { portrait: 4 / 3, landscape: 3 / 4, wide: 9 / 16 }
+
+// Place photos left to right into whichever column is shortest, so the
+// first few photos in the list end up along the top row.
+function toColumns(photos: Photo[], count: number) {
+  const columns: { photo: Photo; index: number }[][] = Array.from({ length: count }, () => [])
+  const heights = new Array(count).fill(0)
+  photos.forEach((photo, index) => {
+    const shortest = heights.indexOf(Math.min(...heights))
+    columns[shortest].push({ photo, index })
+    heights[shortest] += ASPECT_HEIGHT[photo.aspect] + 0.02
+  })
+  return columns
+}
+
+function useColumnCount() {
+  const [count, setCount] = useState(4)
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.matchMedia) return
+    const update = () => {
+      const match = COLUMN_BREAKPOINTS.find(([width]) => window.matchMedia(`(min-width: ${width}px)`).matches)
+      setCount(match ? match[1] : 1)
+    }
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
+  return count
+}
 
 export default function PhotoGallery({ photos }: PhotoGalleryProps) {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -26,6 +59,9 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
     selectedCategory === 'all'
       ? photos
       : photos.filter((p) => p.category === selectedCategory)
+
+  const columnCount = useColumnCount()
+  const columns = toColumns(filteredPhotos, columnCount)
 
   const selectedPhoto = selectedIndex !== null ? filteredPhotos[selectedIndex] : null
 
@@ -64,8 +100,10 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
 
       {/* Expanded Breakout Collage (expands past standard container width) */}
       <div className="relative left-1/2 -translate-x-1/2 w-[calc(100vw-2.5rem)] sm:w-[calc(100vw-4rem)] max-w-6xl xl:max-w-7xl transition-all duration-300">
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:balance]">
-          {filteredPhotos.map((photo, index) => {
+        <div className="flex items-start gap-2">
+          {columns.map((column, columnIndex) => (
+          <div key={columnIndex} className="min-w-0 flex-1">
+          {column.map(({ photo, index }) => {
             const isPortrait = photo.aspect === 'portrait'
             const isWide = photo.aspect === 'wide'
 
@@ -76,7 +114,7 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
                 key={photo.filename}
                 onClick={() => setSelectedIndex(index)}
                 style={{ backgroundColor: photo.placeholder, contentVisibility: 'auto' }}
-                className={`group block w-full text-left relative cursor-pointer overflow-hidden break-inside-avoid mb-2 bg-[#F2F0E5] dark:bg-[#1C1B1A] border border-[#E6E4D9]/80 dark:border-[#282726]/80 transition-all duration-300 hover:z-20 hover:scale-[1.025] hover:shadow-2xl rounded-sm ${
+                className={`group block w-full text-left relative cursor-pointer overflow-hidden mb-2 bg-[#F2F0E5] dark:bg-[#1C1B1A] border border-[#E6E4D9]/80 dark:border-[#282726]/80 transition-all duration-300 hover:z-20 hover:scale-[1.025] hover:shadow-2xl rounded-sm ${
                   isPortrait
                     ? 'aspect-[3/4]'
                     : isWide
@@ -105,6 +143,8 @@ export default function PhotoGallery({ photos }: PhotoGalleryProps) {
               </button>
             )
           })}
+          </div>
+          ))}
         </div>
       </div>
 
