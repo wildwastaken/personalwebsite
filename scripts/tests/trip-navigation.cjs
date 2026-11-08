@@ -6,10 +6,10 @@ const data = load('lib/hikes.ts')
 
 const Home = load('app/page.tsx', {
   react: {...React, useState: initial => [initial, () => {}], useEffect: () => {}},
-  'next/image': 'image', 'next/link': 'link', '@/components/PixelScape': 'landscape',
+  'next/image': 'image', 'next/link': 'link', '@/components/PixelScape': 'landscape', '@/lib/photoAssets': {getPhotoSources: src => ({src})},
 }).default
 const home = Home()
-const cards = ['STA-02', 'STA-03'].map(id => find(home, node => node.props?.href === `/hikes?trip=${id}`))
+const cards = ['STA-02', 'STA-09'].map(id => find(home, node => node.props?.href === `/hikes?trip=${id}`))
 assert.ok(cards.every(Boolean), 'Both recent-trip cards retain destination links')
 
 function mapHarness() {
@@ -52,7 +52,7 @@ for (const card of cards) {
   selectLink(tree)
   tree = render()
   const panel = find(tree, node => node.type === 'map-panel')
-  const expected = query.get('trip') === 'STA-02' ? [-72.5731, -13.3869] : [-116.1847, 51.3297]
+  const expected = query.get('trip') === 'STA-02' ? [-72.563, -13.3494] : [-71.5533, 44.1689]
   const m = mapHarness()
   let mapTree = m.render(panel.props)
   let map = find(mapTree, node => node.type === 'map')
@@ -84,7 +84,7 @@ for (const card of cards) {
 }
 
 const first = data.hikes[0], latest = data.hikes[2]
-const base = {hikes: data.hikes, selectedHike: first, destination: {lat:first.lat, lng:first.lng, zoom:8.5, requestId:1}, onSelect() {}, onPhotos() {}}
+const base = {hikes: data.hikes, selectedHike: first, destination: {lat:first.lat, lng:first.lng, zoom:8.5, requestId:1}, onSelect() {}, onDetails() {}}
 for (const failure of ['timeout', 'error']) {
   const m = mapHarness()
   let tree = m.render(base)

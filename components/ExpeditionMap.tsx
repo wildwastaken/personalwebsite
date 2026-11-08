@@ -17,13 +17,13 @@ interface ExpeditionMapProps {
   selectedHike: Hike | null
   destination: MapDestination | null
   onSelect: (hike: Hike) => void
-  onPhotos: (hike: Hike) => void
+  onDetails: (hike: Hike) => void
 }
 
 const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
 const INITIAL_VIEW = { longitude: -40, latitude: 25, zoom: 1.8 }
 
-export default function ExpeditionMap({ hikes, selectedHike, destination, onSelect, onPhotos }: ExpeditionMapProps) {
+export default function ExpeditionMap({ hikes, selectedHike, destination, onSelect, onDetails }: ExpeditionMapProps) {
   const mapRef = useRef<MapRef>(null)
   const lastFlight = useRef<number | null>(null)
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading')
@@ -76,8 +76,8 @@ export default function ExpeditionMap({ hikes, selectedHike, destination, onSele
               <div className="p-2 font-serif text-[#100F0F]">
                 <p className="text-[11px] text-[#6F6E69] mb-1">{selectedHike.location}, {selectedHike.country}</p>
                 <h3 className="text-base font-bold leading-snug">{selectedHike.name}</h3>
-                <p className="text-xs text-[#6F6E69] mt-2">{selectedHike.distance} · {selectedHike.elevation}</p>
-                {!!selectedHike.photos?.length && <button type="button" onClick={() => onPhotos(selectedHike)} className="text-xs underline underline-offset-4 mt-3">View photos →</button>}
+                <p className="text-xs text-[#6F6E69] mt-2">{[selectedHike.distance, selectedHike.elevation].filter(Boolean).join(' · ')}</p>
+                <button type="button" onClick={() => onDetails(selectedHike)} className="text-xs underline underline-offset-4 mt-3">View details ↓</button>
               </div>
             </Popup>
           )}

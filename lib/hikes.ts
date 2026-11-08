@@ -8,7 +8,7 @@ export interface Hike {
   name: string
   location: string
   country: string
-  distance: string
+  distance?: string
   elevation?: string
   date: string
   lat: number
@@ -18,223 +18,162 @@ export interface Hike {
   photos?: HikePhoto[]
 }
 
+// Dates, times, places, and heights come from the GPS data in my photos.
 export const hikes: Hike[] = [
   {
     num: 'STA-01',
-    name: 'Machu Picchu & Inca Trail',
-    location: 'Sacred Valley, Urubamba Province',
+    name: 'Machu Picchu & Huayna Picchu',
+    location: 'Urubamba Province',
     country: 'Peru',
-    distance: '42 km (26 mi)',
-    elevation: '4,215m peak pass',
-    date: 'Dec 2025',
+    elevation: '2,690 m summit',
+    date: 'Dec 22, 2025',
     lat: -13.1631,
     lng: -72.545,
-    coverImage: '/images/gallery/peru-machu-picchu-clouds.jpeg',
+    coverImage: '/images/gallery/peru-machu-picchu-citadel.jpeg',
     photos: [
-      {
-        src: '/images/gallery/peru-machu-picchu-clouds.jpeg',
-        caption: 'Machu Picchu emerging through morning clouds and fog',
-      },
-      {
-        src: '/images/gallery/peru-machu-picchu-citadel.jpeg',
-        caption: 'Panoramic view of the ancient citadel and terraced slopes',
-      },
-      {
-        src: '/images/gallery/peru-ollantaytambo-terraces.jpeg',
-        caption: 'Inca fortress and stone terraces at Ollantaytambo',
-      },
-      {
-        src: '/images/gallery/peru-cusco-plaza.jpeg',
-        caption: 'Plaza de Armas and historic streets in Cusco',
-      },
+      { src: '/images/gallery/peru-machu-picchu-citadel.jpeg', caption: 'Machu Picchu' },
+      { src: '/images/gallery/peru-huayna-picchu-edge.jpeg', caption: 'Huayna Picchu' },
     ],
-    description:
-      'Stone paths, cloud forests, and terraces along the route to Machu Picchu.',
+    description: 'Through the gates by 6:40, then up the stone stairs of Huayna Picchu, the peak behind the ruins. On top by 9:40.',
   },
   {
     num: 'STA-02',
-    name: 'Salkantay Alpine Pass Trek',
-    location: 'Vilcabamba Mountain Range',
+    name: 'Salkantay Pass',
+    location: 'From Soraypampa, Cordillera Vilcabamba',
     country: 'Peru',
-    distance: '60 km (37 mi)',
-    elevation: '4,630m (Pass)',
-    date: 'Dec 2025',
-    lat: -13.3869,
-    lng: -72.5731,
+    elevation: '4,630 m pass',
+    date: 'Dec 25, 2025',
+    lat: -13.3494,
+    lng: -72.563,
     coverImage: '/images/gallery/peru-salkantay-horse-trek.jpeg',
     photos: [
-      {
-        src: '/images/gallery/peru-salkantay-horse-trek.jpeg',
-        caption: 'Trekking high-altitude rocky pass beneath Mount Salkantay',
-      },
-      {
-        src: '/images/gallery/peru-salkantay-trail-allen.jpeg',
-        caption: 'Allen riding horseback through the Andean mountain trail',
-      },
-      {
-        src: '/images/gallery/peru-salkantay-pack-mule.jpeg',
-        caption: 'Pack horse on the rugged Salkantay Pass',
-      },
-      {
-        src: '/images/gallery/peru-salkantay-valley-vista.jpeg',
-        caption: 'Glacial meltwater and braided streams across the Vilcabamba valley',
-      },
-      {
-        src: '/images/gallery/peru-humantay-trail-horses.jpeg',
-        caption: 'Steep switchbacks toward high alpine ridges',
-      },
+      { src: '/images/gallery/peru-salkantay-horse-trek.jpeg', caption: 'Riding up' },
+      { src: '/images/gallery/peru-salkantay-valley-vista.jpeg', caption: 'Back down the valley' },
     ],
-    description:
-      'An alpine trek beneath Salkantay, over a 4,630m pass and down into glacial valleys.',
+    description: 'Christmas morning. Left Soraypampa on horseback at dawn, stood on the pass at 8:30, and was back down by 11.',
   },
   {
     num: 'STA-03',
-    name: 'Sentinel Pass & Moraine Lake',
-    location: 'Moraine Lake, Banff',
-    country: 'Canada',
-    distance: '11.6 km',
-    elevation: '725m gain (2,611m pass)',
-    date: 'Summer 2024',
-    lat: 51.3297,
-    lng: -116.1847,
-    coverImage: '/images/gallery/moraine-lake-fav.jpeg',
+    name: 'Humantay Lake',
+    location: 'Soraypampa, Cordillera Vilcabamba',
+    country: 'Peru',
+    elevation: '4,200 m lake',
+    date: 'Dec 24, 2025',
+    lat: -13.3808,
+    lng: -72.5863,
+    coverImage: '/images/gallery/peru-humantay-lake.jpeg',
     photos: [
-      {
-        src: '/images/gallery/moraine-lake-fav.jpeg',
-        caption: 'Allen at Moraine Lake with the vibrant turquoise waters and the Ten Peaks',
-      },
-      {
-        src: '/images/gallery/moraine.jpeg',
-        caption: 'Turquoise waters of Moraine Lake and the Valley of the Ten Peaks',
-      },
+      { src: '/images/gallery/peru-humantay-lake.jpeg', caption: 'Humantay Lake' },
+      { src: '/images/gallery/peru-humantay-drone.jpeg', caption: 'From the drone' },
+      { src: '/images/gallery/peru-salkantay-dusk-drone.jpeg', caption: 'Salkantay at dusk' },
+      { src: '/images/gallery/peru-soraypampa-stars.jpeg', caption: 'Stars over camp' },
     ],
-    description:
-      'Up through Larch Valley to Sentinel Pass, with Moraine Lake and the Ten Peaks below.',
+    description: 'Up from camp to the glacier lake under Humantay the afternoon before Salkantay. Good for getting used to the altitude.',
   },
   {
     num: 'STA-04',
-    name: 'Plain of Six Glaciers',
-    location: 'Lake Louise, Banff',
-    country: 'Canada',
-    distance: '14 km',
-    elevation: '587m gain',
-    date: 'Summer 2024',
-    lat: 51.4254,
-    lng: -116.2291,
-    coverImage: '/images/gallery/adam-banff.jpeg',
+    name: 'Above Ollantaytambo',
+    location: 'Sacred Valley',
+    country: 'Peru',
+    elevation: '1,000 m gain',
+    date: 'Dec 20, 2025',
+    lat: -13.2559,
+    lng: -72.3142,
+    coverImage: '/images/gallery/peru-ollantaytambo-edge.jpeg',
     photos: [
-      {
-        src: '/images/gallery/adam-banff.jpeg',
-        caption: 'Plain of Six Glaciers alpine trail overlooking Lake Louise valley',
-      },
-      {
-        src: '/images/gallery/jasper-rockies-fav.jpeg',
-        caption: 'Dockside view of the Canadian Rockies glaciated peaks',
-      },
+      { src: '/images/gallery/peru-ollantaytambo-edge.jpeg', caption: 'Long way down' },
     ],
-    description:
-      'Following Lake Louise past moraines to the tea house beneath the glaciers.',
+    description: 'From town up past the old Inca quarries to about 3,900 m, for the view back across the valley.',
   },
   {
     num: 'STA-05',
-    name: 'Fimmvörðuháls Pass',
-    location: 'Between Eyjafjallajökull and Mýrdalsjökull',
-    country: 'Iceland',
-    distance: '25 km',
-    elevation: '1,000m gain (1,067m pass)',
-    date: '2023',
-    lat: 63.6156,
-    lng: -19.4547,
-    coverImage: '/images/gallery/iceland.jpeg',
+    name: 'Lake Agnes & the Beehive',
+    location: 'Lake Louise, Banff',
+    country: 'Canada',
+    elevation: '490 m gain',
+    date: 'July 18, 2024',
+    lat: 51.4207,
+    lng: -116.2386,
+    coverImage: '/images/gallery/lake-louise-sunrise.jpeg',
     photos: [
-      {
-        src: '/images/gallery/iceland.jpeg',
-        caption: 'Dramatic volcanic canyon and glacial melt along Fimmvörðuháls',
-      },
-      {
-        src: '/images/gallery/iceland-skogafoss-fav.jpeg',
-        caption: 'Natural stone arch over misty river canyon in the highlands',
-      },
+      { src: '/images/gallery/lake-louise-sunrise.jpeg', caption: 'Sunrise' },
     ],
-    description:
-      'Across volcanic terrain between two ice caps, past lava fields and steaming craters.',
+    description: 'Started at the lake at 5 a.m., up past Mirror Lake and Lake Agnes, sunrise up on the Beehive, and back down by 8:20.',
   },
   {
     num: 'STA-06',
-    name: 'Skógafoss to Þórsmörk (Waterfall Way)',
-    location: 'Southern Iceland',
+    name: 'Skógá River',
+    location: 'Skógafoss',
     country: 'Iceland',
-    distance: '22 km',
-    elevation: 'Gorge Traverse',
-    date: '2023',
-    lat: 63.532,
-    lng: -19.5111,
+    date: 'May 12, 2023',
+    lat: 63.5417,
+    lng: -19.5001,
     coverImage: '/images/gallery/iceland-skogafoss-fav.jpeg',
     photos: [
-      {
-        src: '/images/gallery/iceland-skogafoss-fav.jpeg',
-        caption: 'Standing on the natural rock bridge overlooking the canyon gorge',
-      },
-      {
-        src: '/images/gallery/iceland-gullfoss-fav.jpeg',
-        caption: 'Glacial turquoise river rapids and grazing sheep',
-      },
-      {
-        src: '/images/gallery/iceland1.jpeg',
-        caption: 'Cascading waterfalls along the Skógá River gorge',
-      },
+      { src: '/images/gallery/iceland-skogafoss-fav.jpeg', caption: 'Arch in the fog' },
     ],
-    description:
-      'Following the Skógá River past waterfalls and basalt gorges toward Þórsmörk.',
+    description: 'Up the stairs beside Skógafoss and along the river, where there’s a new waterfall every few minutes.',
   },
   {
     num: 'STA-07',
-    name: 'Laugavegur Highland Trail',
-    location: 'Landmannalaugar to Þórsmörk',
+    name: 'Fjaðrárgljúfur',
+    location: 'Near Kirkjubæjarklaustur',
     country: 'Iceland',
-    distance: '55 km',
-    elevation: 'Multi-day Highlands',
-    date: '2023',
-    lat: 63.9753,
-    lng: -19.0569,
-    description:
-      "A multi-day walk through Iceland's highlands, with colorful mountains, hot springs, and glacial rivers.",
+    date: 'May 13, 2023',
+    lat: 63.775,
+    lng: -18.1747,
+    coverImage: '/images/gallery/iceland.jpeg',
+    photos: [
+      { src: '/images/gallery/iceland.jpeg', caption: 'The canyon' },
+    ],
+    description: 'Along the rim of a mossy canyon that the river has cut about 100 m deep.',
   },
   {
     num: 'STA-08',
-    name: 'Pemi Loop & Franconia Ridge',
+    name: 'Brúarfoss',
+    location: 'Brúará river, Golden Circle',
+    country: 'Iceland',
+    date: 'May 17, 2023',
+    lat: 64.2566,
+    lng: -20.5147,
+    coverImage: '/images/gallery/iceland-gullfoss-fav.jpeg',
+    photos: [
+      { src: '/images/gallery/iceland-gullfoss-fav.jpeg', caption: 'So blue' },
+    ],
+    description: 'Along the Brúará to Brúarfoss. The water is a blue that doesn’t look real.',
+  },
+  {
+    num: 'STA-09',
+    name: 'Pemi Loop in a day',
     location: 'White Mountains, NH',
     country: 'USA',
-    distance: '31 miles',
-    elevation: '9,000+ ft total gain',
-    date: 'Summer 2023',
+    distance: '31 mi',
+    elevation: '9,000+ ft gain',
+    date: 'Aug 23, 2025',
     lat: 44.1689,
     lng: -71.5533,
     coverImage: '/images/gallery/lafayette-ridge-fav.jpeg',
     photos: [
-      {
-        src: '/images/gallery/lafayette-ridge-fav.jpeg',
-        caption: 'Traversing the open granite spine of Mount Lafayette, Franconia Ridge',
-      },
-      {
-        src: '/images/gallery/pemi-loop.jpeg',
-        caption: 'Traversing the open alpine ridge on the Franconia Ridge loop',
-      },
-      {
-        src: '/images/gallery/pemi-loop1.jpeg',
-        caption: 'Panoramic views across the Pemigewasset Wilderness',
-      },
-      {
-        src: '/images/gallery/pemi-loop-mark.jpeg',
-        caption: 'Rocky scramble along the Mount Lafayette ridge',
-      },
-      {
-        src: '/images/gallery/pemi-loop2.jpeg',
-        caption: 'Sunset over alpine huts and ridgeline trails',
-      },
+      { src: '/images/gallery/pemi-loop1.jpeg', caption: 'Sunrise on Flume, 5:58 a.m.' },
+      { src: '/images/gallery/lafayette-ridge-fav.jpeg', caption: 'Franconia Ridge' },
+      { src: '/images/gallery/pemi-loop-mark.jpeg', caption: 'On top of Lafayette at 8:30' },
+      { src: '/images/gallery/pemi-loop2.jpeg', caption: 'Sun through the trees' },
     ],
-    description:
-      'A White Mountains loop over Franconia Ridge, with rocky scrambles and open summit views.',
+    description: 'Left Lincoln Woods at 3:30 a.m., watched the sun come up on Mount Flume, crossed Franconia Ridge to Lafayette by 8:30, and got back to the car at 7:50 p.m.',
+  },
+  {
+    num: 'STA-10',
+    name: 'The Bonds & the Twins',
+    location: 'Pemigewasset Wilderness, NH',
+    country: 'USA',
+    date: 'July 31 – Aug 2, 2024',
+    lat: 44.1612,
+    lng: -71.535,
+    coverImage: '/images/gallery/twinway-view.jpeg',
+    photos: [
+      { src: '/images/gallery/twinway-view.jpeg', caption: 'Into the Pemi' },
+      { src: '/images/gallery/galehead-hut.jpeg', caption: 'Made it to Galehead' },
+    ],
+    description: 'Three days out of Lincoln Woods: Bondcliff the first evening, a night near Guyot, over South Twin, and a last night at Galehead Hut.',
   },
 ]
-
