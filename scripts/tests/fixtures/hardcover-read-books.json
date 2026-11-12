@@ -1,0 +1,1056 @@
+{
+ "data": {
+  "me": [
+   {
+    "user_books": [
+     {
+      "rating": 5,
+      "last_read_date": "2026-01-09",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-01-09"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Piranesi",
+       "slug": "piranesi",
+       "pages": 272,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fantasy",
+          "tagSlug": "fantasy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/piranesi.jpg",
+        "color": "#5D7A8C"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Susanna Clarke"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4.5,
+      "last_read_date": "2026-01-27",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-01-27"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Remains of the Day",
+       "slug": "the-remains-of-the-day",
+       "pages": 258,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Literary Fiction",
+          "tagSlug": "literary-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/the-remains-of-the-day.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Kazuo Ishiguro"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4,
+      "last_read_date": "2026-02-14",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-02-14"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Never Let Me Go",
+       "slug": "never-let-me-go",
+       "pages": 288,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Science Fiction",
+          "tagSlug": "science-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/never-let-me-go.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Kazuo Ishiguro"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 5,
+      "last_read_date": "2026-03-30",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-03-30"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Brothers Karamazov",
+       "slug": "the-brothers-karamazov",
+       "pages": 796,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Classics",
+          "tagSlug": "classics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Philosophy",
+          "tagSlug": "philosophy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/the-brothers-karamazov.jpg",
+        "color": "#7A3B2E"
+       },
+       "contributions": [
+        {
+         "contribution": "Translator",
+         "author": {
+          "name": "Richard Pevear"
+         }
+        },
+        {
+         "contribution": null,
+         "author": {
+          "name": "Fyodor Dostoevsky"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 3.5,
+      "last_read_date": "2026-04-18",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-04-18"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Thinking, Fast and Slow",
+       "slug": "thinking-fast-and-slow",
+       "pages": 499,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Psychology",
+          "tagSlug": "psychology",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Economics",
+          "tagSlug": "economics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/thinking-fast-and-slow.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Daniel Kahneman"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4.5,
+      "last_read_date": "2026-05-20",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-05-20"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Annals of the Former World",
+       "slug": "annals-of-the-former-world",
+       "pages": 696,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Science",
+          "tagSlug": "science",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/annals-of-the-former-world.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "John McPhee"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": null,
+      "last_read_date": "2026-06-02",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-06-02"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Klara and the Sun",
+       "slug": "klara-and-the-sun",
+       "pages": 303,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Science Fiction",
+          "tagSlug": "science-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/klara-and-the-sun.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Kazuo Ishiguro"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4,
+      "last_read_date": "2026-06-21",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-06-21"
+       }
+      ],
+      "edition": {
+       "pages": 333
+      },
+      "book": {
+       "title": "Into Thin Air",
+       "slug": "into-thin-air",
+       "pages": null,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Adventure",
+          "tagSlug": "adventure",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/into-thin-air.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Jon Krakauer"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 3,
+      "last_read_date": "2026-07-04",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-07-04"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Old Man and the Sea",
+       "slug": "the-old-man-and-the-sea",
+       "pages": 127,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Classics",
+          "tagSlug": "classics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/the-old-man-and-the-sea.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Ernest Hemingway"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 5,
+      "last_read_date": "2026-08-15",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2025-02-11"
+       },
+       {
+        "started_at": null,
+        "finished_at": "2026-08-15"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Meditations",
+       "slug": "meditations",
+       "pages": 254,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Philosophy",
+          "tagSlug": "philosophy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Classics",
+          "tagSlug": "classics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/meditations.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": "Translator",
+         "author": {
+          "name": "Gregory Hays"
+         }
+        },
+        {
+         "contribution": null,
+         "author": {
+          "name": "Marcus Aurelius"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4.5,
+      "last_read_date": "2026-08-30",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-08-30"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Project Hail Mary",
+       "slug": "project-hail-mary",
+       "pages": 476,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Science Fiction",
+          "tagSlug": "science-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/project-hail-mary.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Andy Weir"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 5,
+      "last_read_date": "2026-10-12",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2026-10-12"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Dispossessed",
+       "slug": "the-dispossessed",
+       "pages": 387,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Science Fiction",
+          "tagSlug": "science-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Philosophy",
+          "tagSlug": "philosophy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": null,
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Ursula K. Le Guin"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": null,
+      "last_read_date": null,
+      "user_book_reads": [],
+      "edition": null,
+      "book": {
+       "title": "A Short Untitled Pamphlet",
+       "slug": "pamphlet",
+       "pages": null,
+       "cached_tags": [],
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/pamphlet.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": ""
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": "4",
+      "last_read_date": "2026-11-03",
+      "user_book_reads": [],
+      "edition": null,
+      "book": {
+       "title": "Tomorrow, and Tomorrow, and Tomorrow",
+       "slug": "tomorrow-and-tomorrow-and-tomorrow",
+       "pages": 401,
+       "cached_tags": [],
+       "image": {
+        "url": "",
+        "color": null
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Gabrielle Zevin"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4.5,
+      "last_read_date": "2025-04-02",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2025-04-02"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Gödel, Escher, Bach",
+       "slug": "godel-escher-bach",
+       "pages": 777,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Philosophy",
+          "tagSlug": "philosophy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Mathematics",
+          "tagSlug": "mathematics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/godel-escher-bach.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Douglas Hofstadter"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4,
+      "last_read_date": "2025-07-19",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2025-07-19"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Left Hand of Darkness",
+       "slug": "the-left-hand-of-darkness",
+       "pages": 304,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Science Fiction",
+          "tagSlug": "science-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/the-left-hand-of-darkness.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Ursula K. Le Guin"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4,
+      "last_read_date": "2025-09-08",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2025-09-08"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Educated",
+       "slug": "educated",
+       "pages": 334,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Nonfiction",
+          "tagSlug": "nonfiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Memoir",
+          "tagSlug": "memoir",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/educated.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "Tara Westover"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 5,
+      "last_read_date": "2025-12-28",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2025-12-28"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "Stoner",
+       "slug": "stoner",
+       "pages": 278,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Literary Fiction",
+          "tagSlug": "literary-fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/stoner.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "John Williams"
+         }
+        }
+       ]
+      }
+     },
+     {
+      "rating": 4,
+      "last_read_date": "2024-08-10",
+      "user_book_reads": [
+       {
+        "started_at": null,
+        "finished_at": "2024-08-10"
+       }
+      ],
+      "edition": null,
+      "book": {
+       "title": "The Hobbit",
+       "slug": "the-hobbit",
+       "pages": 310,
+       "cached_tags": {
+        "Genre": [
+         {
+          "tag": "Fantasy",
+          "tagSlug": "fantasy",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Fiction",
+          "tagSlug": "fiction",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         },
+         {
+          "tag": "Classics",
+          "tagSlug": "classics",
+          "category": "Genre",
+          "categorySlug": "genre",
+          "spoilerRatio": 0,
+          "count": 100
+         }
+        ],
+        "Mood": [
+         {
+          "tag": "reflective",
+          "category": "Mood",
+          "count": 40
+         }
+        ]
+       },
+       "image": {
+        "url": "https://assets.hardcover.app/edition/sample/the-hobbit.jpg",
+        "color": "#8B7E66"
+       },
+       "contributions": [
+        {
+         "contribution": null,
+         "author": {
+          "name": "J.R.R. Tolkien"
+         }
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+}
