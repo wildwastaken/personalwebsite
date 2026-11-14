@@ -67,39 +67,6 @@
         }
       ]
     },
-    "connecticut-coast-fav.jpeg": {
-      "fingerprint": "a4f42f810037e79a65a59fbc5c01bea2953ba61c3c63257e9c091f9832834ad2",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/connecticut-coast-fav.jpeg",
-      "placeholder": "#938167",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 16510
-        },
-        {
-          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 45350
-        },
-        {
-          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 78132
-        },
-        {
-          "src": "/images/gallery/optimized/connecticut-coast-fav-a4f42f810037-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 155130
-        }
-      ]
-    },
     "iceland-gullfoss-fav.jpeg": {
       "fingerprint": "10eb62e6d260a4912085ed71f2f6dc42b52ed1ebdab7c25b33d76f19b5b35543",
       "width": 1600,
@@ -298,6 +265,39 @@
         }
       ]
     },
+    "lake-louise-sunrise.jpeg": {
+      "fingerprint": "30f901e056437ab2a7e9278942ae040d813b201216865a16f92fe94a6c79c7f3",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/lake-louise-sunrise.jpeg",
+      "placeholder": "#736c5e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/lake-louise-sunrise-30f901e05643-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 9526
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-sunrise-30f901e05643-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 28834
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-sunrise-30f901e05643-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 54622
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-sunrise-30f901e05643-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 118000
+        }
+      ]
+    },
     "moraine-lake-fav.jpeg": {
       "fingerprint": "1602550fde66293c3ccdd6505477b1b87655e04ed28220d3a5526a4cb63fcd9d",
       "width": 1600,
@@ -430,39 +430,6 @@
         }
       ]
     },
-    "pemi-loop.jpeg": {
-      "fingerprint": "30f901e056437ab2a7e9278942ae040d813b201216865a16f92fe94a6c79c7f3",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/pemi-loop.jpeg",
-      "placeholder": "#736c5e",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 9526
-        },
-        {
-          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 28834
-        },
-        {
-          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 54622
-        },
-        {
-          "src": "/images/gallery/optimized/pemi-loop-30f901e05643-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 118000
-        }
-      ]
-    },
     "pemi-loop1.jpeg": {
       "fingerprint": "260f0eaa229a6671f0b9916752ac2aca99d78a79052b2a2a19d153fe3a83f79f",
       "width": 1600,
@@ -526,39 +493,6 @@
           "width": 1200,
           "height": 1600,
           "bytes": 146698
-        }
-      ]
-    },
-    "peru-cusco-plaza.jpeg": {
-      "fingerprint": "ff277d367c8e2c1540feb7d40d2f9e2afdc130d5d82de7ebe380ed920e5a1eb5",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/peru-cusco-plaza.jpeg",
-      "placeholder": "#917567",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-320.webp",
-          "width": 320,
-          "height": 240,
-          "bytes": 13182
-        },
-        {
-          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-640.webp",
-          "width": 640,
-          "height": 480,
-          "bytes": 40278
-        },
-        {
-          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-960.webp",
-          "width": 960,
-          "height": 720,
-          "bytes": 74782
-        },
-        {
-          "src": "/images/gallery/optimized/peru-cusco-plaza-ff277d367c8e-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 223776
         }
       ]
     },
@@ -859,39 +793,6 @@
         }
       ]
     },
-    "princeton-campus-fav.jpeg": {
-      "fingerprint": "f38cb2744d00256d62af59403c8db93e3a032e4d1bd4ee89300184c0d4d7b2ad",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/princeton-campus-fav.jpeg",
-      "placeholder": "#767068",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 7844
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 18616
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 29648
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-f38cb2744d00-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 55354
-        }
-      ]
-    },
     "whistler-powder-fav.jpeg": {
       "fingerprint": "ecec11d114f52efd83bad8b8dbf4d7d05df6473fa0be2e7305f9f8c5214e4e40",
       "width": 1600,
@@ -955,39 +856,6 @@
           "width": 1600,
           "height": 1200,
           "bytes": 272842
-        }
-      ]
-    },
-    "whistler1.jpeg": {
-      "fingerprint": "1163908ca9f03fd84a8d6dc0b6b38293d5c2ac296e39653169b84670f9f75fb8",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/whistler1.jpeg",
-      "placeholder": "#6a7b88",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-320.webp",
-          "width": 320,
-          "height": 240,
-          "bytes": 17542
-        },
-        {
-          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-640.webp",
-          "width": 640,
-          "height": 480,
-          "bytes": 65146
-        },
-        {
-          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-960.webp",
-          "width": 960,
-          "height": 720,
-          "bytes": 136238
-        },
-        {
-          "src": "/images/gallery/optimized/whistler1-1163908ca9f0-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 433704
         }
       ]
     }

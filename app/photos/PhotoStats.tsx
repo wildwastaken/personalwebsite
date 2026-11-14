@@ -9,7 +9,7 @@ export default function PhotoStats({ photoCount }: PhotoStatsProps) {
         {photoCount} photos
       </div>
       <div>
-        Peru · Canada · Iceland · US
+        Peru · Canada · Iceland · New England
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Software tools, hackathon prototypes, and side projects.',
+  description: 'Things I’ve built for friends, classes, and hackathons.',
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

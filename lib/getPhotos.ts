@@ -16,331 +16,86 @@ export interface Photo {
   aspect: 'portrait' | 'landscape' | 'wide'
 }
 
-const photoMetadataMap: Record<string, {
+interface PhotoMeta {
+  file: string
   alt: string
   category: string
   categoryLabel: string
   location: string
   date: string
   coordinates?: string
-}> = {
-  // Favorites from Apple Photos Library
-  'moraine-lake-fav.jpeg': {
-    alt: 'Allen at Moraine Lake with the turquoise waters and Valley of the Ten Peaks',
-    category: 'rockies',
-    categoryLabel: 'Canadian Rockies',
-    location: 'Moraine Lake, Banff',
-    date: 'July 2024',
-    coordinates: '51.3276, -116.1800'
-  },
-  'jasper-rockies-fav.jpeg': {
-    alt: 'Resting on the wooden pier facing the glaciated peaks of the Canadian Rockies',
-    category: 'rockies',
-    categoryLabel: 'Canadian Rockies',
-    location: 'Jasper National Park, Alberta',
-    date: 'July 2024',
-    coordinates: '52.7263, -117.6429'
-  },
-  'lafayette-ridge-fav.jpeg': {
-    alt: 'Traversing the open granite spine of Mount Lafayette, Franconia Ridge',
-    category: 'white-mountains',
-    categoryLabel: 'White Mountains',
-    location: 'Mount Lafayette, NH',
-    date: 'Aug 2025',
-    coordinates: '44.1412, -71.6447'
-  },
-  'iceland-skogafoss-fav.jpeg': {
-    alt: 'Standing atop a natural stone arch overlooking a misty river gorge in Iceland',
-    category: 'iceland',
-    categoryLabel: 'Iceland',
-    location: 'Skógá River Gorge, Iceland',
-    date: 'May 2023',
-    coordinates: '63.5417, -19.5001'
-  },
-  'iceland-gullfoss-fav.jpeg': {
-    alt: 'Glacial turquoise river rushing past grazing sheep on the canyon banks',
-    category: 'iceland',
-    categoryLabel: 'Iceland',
-    location: 'Hvítá River Basin, Iceland',
-    date: 'May 2023',
-    coordinates: '64.2566, -20.5147'
-  },
-  'whistler-powder-fav.jpeg': {
-    alt: 'Dramatic cloud inversion rolling across snow-laden firs in Whistler',
-    category: 'pnw',
-    categoryLabel: 'Pacific Northwest',
-    location: 'Whistler Mountain, BC',
-    date: 'Jan 2025',
-    coordinates: '50.0791, -122.9583'
-  },
-  'orient-point-fav.jpeg': {
-    alt: 'Golden hour sunset with close friends on the rocky shoreline',
-    category: 'northeast',
-    categoryLabel: 'Northeast',
-    location: 'Long Island Sound Coast',
-    date: 'May 2025',
-    coordinates: '41.0263, -72.5391'
-  },
-
-  // Curated Peru Highlights
-  'peru-machu-picchu-clouds.jpeg': {
-    alt: 'Machu Picchu emerging through morning clouds and peaks',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Machu Picchu, Urubamba Province',
-    date: 'Dec 2025',
-    coordinates: '-13.1651, -72.5437'
-  },
-  'peru-machu-picchu-citadel.jpeg': {
-    alt: 'Ancient citadel and agricultural terraces of Machu Picchu',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Machu Picchu, Urubamba Province',
-    date: 'Dec 2025',
-    coordinates: '-13.1653, -72.5447'
-  },
-  'peru-salkantay-trail-allen.jpeg': {
-    alt: 'Trekking by horseback along the alpine Salkantay trail',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Vilcabamba Mountain Range',
-    date: 'Dec 2025',
-    coordinates: '-13.3591, -72.5596'
-  },
-  'peru-salkantay-horse-trek.jpeg': {
-    alt: 'Navigating high-altitude rocky pass beneath Mount Salkantay',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Salkantay Pass Trail',
-    date: 'Dec 2025',
-    coordinates: '-13.3571, -72.5602'
-  },
-  'peru-salkantay-pack-mule.jpeg': {
-    alt: 'Pack horse pausing on the high Andean pass trail',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Salkantay Pass (4,630m)',
-    date: 'Dec 2025',
-    coordinates: '-13.3537, -72.5606'
-  },
-  'peru-salkantay-valley-vista.jpeg': {
-    alt: 'Braided glacial streams carving through Vilcabamba Valley',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Mollepata Valley',
-    date: 'Dec 2025',
-    coordinates: '-13.3508, -72.5603'
-  },
-  'peru-ollantaytambo-terraces.jpeg': {
-    alt: 'Stone terraces and fortress slopes at Ollantaytambo',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Ollantaytambo, Sacred Valley',
-    date: 'Dec 2025',
-    coordinates: '-13.2636, -72.3103'
-  },
-  'peru-cusco-plaza.jpeg': {
-    alt: 'Historic Andean architecture around Cusco city',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Cusco Historic Quarter',
-    date: 'Dec 2025',
-    coordinates: '-13.5242, -71.9801'
-  },
-  'peru-humantay-trail-horses.jpeg': {
-    alt: 'Mules resting on the switchbacks toward Humantay',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'Soraypampa to Humantay',
-    date: 'Dec 2025',
-    coordinates: '-13.3604, -72.5596'
-  },
-  'peru-high-andes-pass.jpeg': {
-    alt: 'Vast grassy Andean foothills leading toward the mountain wall',
-    category: 'peru',
-    categoryLabel: 'Peru',
-    location: 'High Andean Plateau',
-    date: 'Dec 2025',
-    coordinates: '-13.3650, -72.5607'
-  },
-
-  // Existing Gallery Archives
-  'adam-banff.jpeg': {
-    alt: 'Plain of Six Glaciers alpine trail and tea house overlook',
-    category: 'rockies',
-    categoryLabel: 'Canadian Rockies',
-    location: 'Lake Louise, Banff',
-    date: 'Summer 2024',
-    coordinates: '51.4254, -116.2291'
-  },
-  'moraine.jpeg': {
-    alt: 'Vibrant turquoise waters of Moraine Lake and the Valley of the Ten Peaks',
-    category: 'rockies',
-    categoryLabel: 'Canadian Rockies',
-    location: 'Moraine Lake, Banff',
-    date: 'Summer 2024',
-    coordinates: '51.3297, -116.1847'
-  },
-  'iceland.jpeg': {
-    alt: 'Glacial valley and volcanic canyons on Fimmvörðuháls',
-    category: 'iceland',
-    categoryLabel: 'Iceland',
-    location: 'Southern Highlands',
-    date: '2023',
-    coordinates: '63.6156, -19.4547'
-  },
-  'iceland1.jpeg': {
-    alt: 'Dramatic waterfall and basalt columns along the southern coast',
-    category: 'iceland',
-    categoryLabel: 'Iceland',
-    location: 'Skógafoss Trail',
-    date: '2023',
-    coordinates: '63.5320, -19.5111'
-  },
-  'pemi-loop.jpeg': {
-    alt: 'Traversing the open alpine ridge on the Franconia Ridge loop',
-    category: 'white-mountains',
-    categoryLabel: 'White Mountains',
-    location: 'Franconia Notch, NH',
-    date: 'Summer 2023',
-    coordinates: '44.1689, -71.5533'
-  },
-  'pemi-loop1.jpeg': {
-    alt: 'Panoramic summit views across the Pemigewasset Wilderness',
-    category: 'white-mountains',
-    categoryLabel: 'White Mountains',
-    location: 'Mount Garfield Trail, NH',
-    date: 'Summer 2023',
-    coordinates: '44.1867, -71.6111'
-  },
-  'pemi-loop2.jpeg': {
-    alt: 'Sunset over alpine huts and ridgeline trails',
-    category: 'white-mountains',
-    categoryLabel: 'White Mountains',
-    location: 'White Mountains, NH',
-    date: 'Summer 2023',
-    coordinates: '44.1500, -71.5600'
-  },
-  'pemi-loop-mark.jpeg': {
-    alt: 'High elevation rocky scramble along the Pemi Loop trail',
-    category: 'white-mountains',
-    categoryLabel: 'White Mountains',
-    location: 'Mount Lafayette, NH',
-    date: 'Summer 2023',
-    coordinates: '44.1607, -71.6444'
-  },
-  'whistler.jpeg': {
-    alt: 'Coast Mountain alpine ridges and summer wildflower slopes',
-    category: 'pnw',
-    categoryLabel: 'Pacific Northwest',
-    location: 'Whistler, BC, Canada',
-    date: '2024',
-    coordinates: '50.1163, -122.9574'
-  },
-  'whistler1.jpeg': {
-    alt: 'Glacial valley vista from the high alpine trail at Whistler',
-    category: 'pnw',
-    categoryLabel: 'Pacific Northwest',
-    location: 'Whistler Mountain, BC',
-    date: '2024',
-    coordinates: '50.0600, -122.9500'
-  },
-  'beaconfalls.jpeg': {
-    alt: 'Beacon Falls forest and river walking trail',
-    category: 'northeast',
-    categoryLabel: 'Northeast',
-    location: 'Beacon Falls, CT',
-    date: '2023',
-    coordinates: '41.4432, -73.0601'
-  }
 }
 
+const PERU = { category: 'peru', categoryLabel: 'Peru' }
+const ROCKIES = { category: 'rockies', categoryLabel: 'Canadian Rockies' }
+const ICELAND = { category: 'iceland', categoryLabel: 'Iceland' }
+const WHITES = { category: 'white-mountains', categoryLabel: 'White Mountains' }
+const WHISTLER = { category: 'whistler', categoryLabel: 'Whistler' }
+const HOME = { category: 'northeast', categoryLabel: 'Close to home' }
+
+// Display order. Locations and dates come from each photo's EXIF data.
+const catalog: PhotoMeta[] = [
+  { file: 'peru-machu-picchu-clouds.jpeg', ...PERU, alt: 'Machu Picchu as the morning clouds lift', location: 'Machu Picchu', date: 'Dec 2025', coordinates: '-13.1651, -72.5437' },
+  { file: 'moraine-lake-fav.jpeg', ...ROCKIES, alt: 'Me at Moraine Lake', location: 'Moraine Lake, Banff', date: 'July 2024', coordinates: '51.3276, -116.1800' },
+  { file: 'iceland-skogafoss-fav.jpeg', ...ICELAND, alt: 'A rock arch in the fog above the Skógá', location: 'Skógá River, Iceland', date: 'May 2023', coordinates: '63.5417, -19.5001' },
+  { file: 'peru-salkantay-horse-trek.jpeg', ...PERU, alt: 'On horseback below Salkantay', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3571, -72.5602' },
+  { file: 'lafayette-ridge-fav.jpeg', ...WHITES, alt: 'Early light on Franconia Ridge', location: 'Mount Lafayette, NH', date: 'Aug 2025', coordinates: '44.1412, -71.6447' },
+  { file: 'whistler-powder-fav.jpeg', ...WHISTLER, alt: 'Clouds sitting in the valley below Whistler', location: 'Whistler, BC', date: 'Jan 2025', coordinates: '50.0791, -122.9583' },
+  { file: 'peru-machu-picchu-citadel.jpeg', ...PERU, alt: 'The citadel and terraces at Machu Picchu', location: 'Machu Picchu', date: 'Dec 2025', coordinates: '-13.1653, -72.5447' },
+  { file: 'jasper-rockies-fav.jpeg', ...ROCKIES, alt: 'Lying on a dock in Jasper', location: 'Jasper, Alberta', date: 'July 2024', coordinates: '52.7263, -117.6429' },
+  { file: 'iceland-gullfoss-fav.jpeg', ...ICELAND, alt: 'The Brúará running blue past grazing sheep', location: 'Brúará, Iceland', date: 'May 2023', coordinates: '64.2566, -20.5147' },
+  { file: 'peru-salkantay-trail-allen.jpeg', ...PERU, alt: 'Riding up the Salkantay trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3591, -72.5596' },
+  { file: 'moraine.jpeg', ...ROCKIES, alt: 'Moraine Lake and the Valley of the Ten Peaks', location: 'Moraine Lake, Banff', date: 'July 2024', coordinates: '51.3275, -116.1814' },
+  { file: 'pemi-loop-mark.jpeg', ...WHITES, alt: 'A friend on the ridge north of Lafayette', location: 'Franconia Ridge, NH', date: 'Aug 2025', coordinates: '44.1610, -71.6445' },
+  { file: 'adam-banff.jpeg', ...ROCKIES, alt: 'Sitting on the Engine Bridge with the Three Sisters behind', location: 'Canmore, Alberta', date: 'July 2024', coordinates: '51.0915, -115.3698' },
+  { file: 'lake-louise-sunrise.jpeg', ...ROCKIES, alt: 'Sunrise on the trail above Lake Louise', location: 'Lake Louise, Banff', date: 'July 2024', coordinates: '51.4211, -116.2375' },
+  { file: 'peru-salkantay-valley-vista.jpeg', ...PERU, alt: 'Looking down the valley from the Salkantay trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3767, -72.5642' },
+  { file: 'iceland.jpeg', ...ICELAND, alt: 'Fjaðrárgljúfur canyon', location: 'Fjaðrárgljúfur, Iceland', date: 'May 2023', coordinates: '63.7750, -18.1747' },
+  { file: 'peru-ollantaytambo-terraces.jpeg', ...PERU, alt: 'The Sacred Valley near Ollantaytambo', location: 'Ollantaytambo', date: 'Dec 2025', coordinates: '-13.2636, -72.3103' },
+  { file: 'whistler.jpeg', ...WHISTLER, alt: 'Snow on the trees at Whistler', location: 'Whistler, BC', date: 'Jan 2025', coordinates: '50.0858, -122.8966' },
+  { file: 'pemi-loop1.jpeg', ...WHITES, alt: 'Sunrise over the Pemigewasset Wilderness', location: 'White Mountains, NH', date: 'Aug 2025', coordinates: '44.1061, -71.6307' },
+  { file: 'peru-humantay-trail-horses.jpeg', ...PERU, alt: 'Our horses at the Salkantay trailhead', location: 'Soraypampa', date: 'Dec 2025', coordinates: '-13.3604, -72.5596' },
+  { file: 'peru-high-andes-pass.jpeg', ...PERU, alt: 'Clouds over the Salkantay valley', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3650, -72.5607' },
+  { file: 'peru-salkantay-pack-mule.jpeg', ...PERU, alt: 'A curious horse on the trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3495, -72.5632' },
+  { file: 'pemi-loop2.jpeg', ...WHITES, alt: 'The sun coming up through the trees', location: 'White Mountains, NH', date: 'Aug 2025', coordinates: '44.1050, -71.6784' },
+  { file: 'iceland1.jpeg', ...ICELAND, alt: 'A town on the south coast from the hill above it', location: 'South Iceland', date: 'May 2023' },
+  { file: 'orient-point-fav.jpeg', ...HOME, alt: 'Friends on the rocks at sunset', location: 'Orient Point, NY', date: 'May 2025', coordinates: '41.0263, -72.5391' },
+  { file: 'beaconfalls.jpeg', ...HOME, alt: 'Dusk over the Naugatuck valley', location: 'Beacon Falls, CT', date: 'Dec 2024', coordinates: '41.4404, -73.0581' },
+]
+
+const metadata = new Map(catalog.map(entry => [entry.file, entry]))
+
 export function getPhotos(): Photo[] {
-  const imageFiles = Object.keys(photoAssets)
-
-  // Curated editorial ordering highlighting the finest captures
-  const priorityOrder = [
-    'peru-machu-picchu-clouds.jpeg',
-    'moraine-lake-fav.jpeg',
-    'iceland-skogafoss-fav.jpeg',
-    'peru-salkantay-horse-trek.jpeg',
-    'jasper-rockies-fav.jpeg',
-    'lafayette-ridge-fav.jpeg',
-    'whistler-powder-fav.jpeg',
-    'peru-machu-picchu-citadel.jpeg',
-    'iceland-gullfoss-fav.jpeg',
-    'peru-salkantay-trail-allen.jpeg',
-    'moraine.jpeg',
-    'orient-point-fav.jpeg',
-    'adam-banff.jpeg',
-    'pemi-loop.jpeg',
-    'peru-salkantay-pack-mule.jpeg',
-    'peru-salkantay-valley-vista.jpeg',
-    'iceland.jpeg',
-    'iceland1.jpeg',
-    'peru-ollantaytambo-terraces.jpeg',
-    'whistler.jpeg',
-    'pemi-loop1.jpeg',
-    'peru-humantay-trail-horses.jpeg',
-    'peru-high-andes-pass.jpeg',
-    'peru-cusco-plaza.jpeg',
-    'pemi-loop2.jpeg',
-    'whistler1.jpeg',
-    'pemi-loop-mark.jpeg',
-    'beaconfalls.jpeg'
-  ]
-
-  imageFiles.sort((a, b) => {
-    const idxA = priorityOrder.indexOf(a)
-    const idxB = priorityOrder.indexOf(b)
+  const order = catalog.map(entry => entry.file)
+  const imageFiles = Object.keys(photoAssets).sort((a, b) => {
+    const idxA = order.indexOf(a)
+    const idxB = order.indexOf(b)
     if (idxA !== -1 && idxB !== -1) return idxA - idxB
     if (idxA !== -1) return -1
     if (idxB !== -1) return 1
     return a.localeCompare(b)
   })
 
-  const portraitFiles = new Set([
-    'connecticut-coast-fav.jpeg',
-    'jasper-rockies-fav.jpeg',
-    'lafayette-ridge-fav.jpeg',
-    'orient-point-fav.jpeg',
-    'pemi-loop.jpeg',
-    'pemi-loop2.jpeg',
-    'peru-high-andes-pass.jpeg',
-    'peru-salkantay-horse-trek.jpeg',
-    'peru-salkantay-pack-mule.jpeg',
-    'peru-salkantay-trail-allen.jpeg',
-    'peru-salkantay-valley-vista.jpeg',
-    'princeton-campus-fav.jpeg',
-  ])
-
-  const wideFiles = new Set([
-    'iceland.jpeg',
-  ])
-
-  const photos: Photo[] = imageFiles.map((file, index) => {
-    const meta = photoMetadataMap[file] || {
+  return imageFiles.map((file, index) => {
+    const meta = metadata.get(file) || {
       alt: file.replace(/\.[^/.]+$/, '').replace(/[-_]/g, ' '),
       category: 'other',
       categoryLabel: 'Other',
-      location: 'Various',
-      date: '2023-2025'
+      location: '',
+      date: '',
+      coordinates: undefined,
     }
-
-    const aspect: 'portrait' | 'landscape' | 'wide' = portraitFiles.has(file)
-      ? 'portrait'
-      : wideFiles.has(file)
-      ? 'wide'
-      : 'landscape'
-
+    const asset = photoAssets[file]
+    const ratio = asset.width / asset.height
+    const aspect: Photo['aspect'] = ratio < 1 ? 'portrait' : ratio > 2 ? 'wide' : 'landscape'
     const src = `/images/gallery/${encodeURIComponent(file)}`
 
     return {
       id: index + 1,
       src,
       thumbSrc: getPhotoSources(src).src,
-      originalSrc: photoAssets[file].originalSrc,
-      placeholder: photoAssets[file].placeholder,
+      originalSrc: asset.originalSrc,
+      placeholder: asset.placeholder,
       alt: meta.alt,
       filename: file,
       category: meta.category,
@@ -351,6 +106,4 @@ export function getPhotos(): Photo[] {
       aspect,
     }
   })
-
-  return photos
 }

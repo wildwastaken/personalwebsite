@@ -6,12 +6,12 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 export const metadata: Metadata = {
   metadataBase: new URL('https://allenliu.dev'),
   title: { default: 'Allen Liu', template: '%s · Allen Liu' },
-  description: 'Projects, hikes, and photos. Senior at Princeton University.',
+  description: 'Allen Liu builds small software tools and hikes a lot. Senior at Princeton.',
   keywords: ['Allen Liu', 'Princeton University', 'Projects', 'Hikes', 'Photos', 'Software'],
   authors: [{ name: 'Allen Liu' }],
   openGraph: {
     title: 'Allen Liu',
-    description: 'Projects, hikes, and photos. Senior at Princeton University.',
+    description: 'Allen Liu builds small software tools and hikes a lot. Senior at Princeton.',
     type: 'website',
   },
 }

@@ -9,7 +9,7 @@ const output = path.join(gallery, 'optimized')
 const manifestFile = path.join(root, 'lib/generated/photo-assets.json')
 const VERSION = 1
 // These existing JPEGs have upright pixels but retained an old EXIF rotation tag.
-const alreadyUpright = new Set(['jasper-rockies-fav.jpeg', 'lafayette-ridge-fav.jpeg', 'princeton-campus-fav.jpeg'])
+const alreadyUpright = new Set(['jasper-rockies-fav.jpeg', 'lafayette-ridge-fav.jpeg'])
 const imageExtensions = new Set(['.jpg', '.jpeg', '.png', '.webp'])
 const digest = buffer => crypto.createHash('sha256').update(buffer).digest('hex')
 const exists = async file => fs.access(file).then(() => true, () => false)

@@ -5,7 +5,7 @@ export default function PhotosHeader() {
         Photos
       </h1>
       <p className="text-sm text-[#6F6E69] dark:text-[#878580]">
-        Peruvian Andes, Canadian Rockies, Iceland, and the White Mountains. Click any photo to expand.
+        From trips and trails. Tap one to see it bigger.
       </p>
     </div>
   )

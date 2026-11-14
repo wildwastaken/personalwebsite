@@ -15,7 +15,8 @@ const CATEGORIES = [
   { id: 'rockies', label: 'Canadian Rockies' },
   { id: 'iceland', label: 'Iceland' },
   { id: 'white-mountains', label: 'White Mountains' },
-  { id: 'pnw', label: 'Pacific Northwest' },
+  { id: 'whistler', label: 'Whistler' },
+  { id: 'northeast', label: 'Close to home' },
 ]
 
 export default function PhotoGallery({ photos }: PhotoGalleryProps) {

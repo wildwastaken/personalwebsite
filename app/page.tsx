@@ -115,11 +115,10 @@ export default function Home() {
             </div>
 
             <p className="col-span-2 text-base text-[#282726] dark:text-[#D4D2C9] leading-relaxed">
-              I build simple software tools, study economic mechanisms and ethics, and hike alpine trails.
-              I care about software that is direct, purposeful, and free of unnecessary bloat.
+              I like making small tools that solve real problems for people I know. When I&apos;m not at a keyboard, I&apos;m usually on a trail.
             </p>
 
-            {/* Direct Links (resume removed as requested) */}
+            {/* Links */}
             <div className="col-span-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 font-mono text-xs sm:pt-1">
               <a
                 href="https://github.com/wildwastaken"
@@ -170,7 +169,7 @@ export default function Home() {
         {/* Authentic About Prose */}
         <section className="bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[3px] border border-[#E6E4D9]/80 dark:border-[#282726]/80 p-3 sm:p-3.5 rounded-sm leading-relaxed text-[14px] sm:text-[14.5px] text-[#282726] dark:text-[#D4D2C9]">
           <p>
-            I first learned to write software during the pandemic building stock checkers and notification bots for neighbors in Connecticut. At Princeton, I study computer systems, economics, and moral philosophy, and hike alpine passes across Peru, the Canadian Rockies, and Iceland. Outside of class and the terminal, I spend time cycling country roads, reading theology and literature, or cooking with close friends.
+            My first program helped neighbors find essentials during the pandemic, and I&apos;ve been building things ever since: a guitar tab printer for a friend, a calendar for Princeton&apos;s event emails, a physical therapy tracker at HackMIT. Outside of that I&apos;m reading, biking, cooking with friends, or planning the next hike.
           </p>
         </section>
 
@@ -191,23 +190,23 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             <Link href="/hikes?trip=STA-02" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
               <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
-                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Peruvian Andes • 4,630m</span>
+                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Peru</span>
                 <span>Dec 2025</span>
               </div>
               <h3 className="font-serif text-sm font-bold text-[#100F0F] dark:text-[#CECDC3]">
                 <span className="group-hover:underline">
-                  Salkantay Pass &amp; Machu Picchu
+                  Salkantay &amp; Machu Picchu
                 </span>
               </h3>
               <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
-                High-altitude pass beneath Mount Salkantay, descending through cloud forests and Incan stone terraces.
+                Up the Salkantay trail on horseback, plus a misty morning at Machu Picchu.
               </p>
             </Link>
 
             <Link href="/hikes?trip=STA-03" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
               <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
-                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Canadian Rockies • 2,611m</span>
-                <span>Summer 2024</span>
+                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Canadian Rockies</span>
+                <span>July 2024</span>
               </div>
               <h3 className="font-serif text-sm font-bold text-[#100F0F] dark:text-[#CECDC3]">
                 <span className="group-hover:underline">
@@ -215,7 +214,7 @@ export default function Home() {
                 </span>
               </h3>
               <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
-                Climbing above Larch Valley to one of Banff’s highest maintained passes beneath Mount Temple.
+                Up through Larch Valley to the pass, with Moraine Lake below.
               </p>
             </Link>
           </div>

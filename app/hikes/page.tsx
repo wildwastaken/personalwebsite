@@ -64,12 +64,12 @@ export default function Hikes() {
       <Suspense fallback={null}><TripFromLink onSelect={locateHike} /></Suspense>
       <div className="border-b border-[#E6E4D9] dark:border-[#282726] pb-4 space-y-2">
         <h1 className="font-serif text-3xl font-bold tracking-tight">Expeditions</h1>
-        <p className="text-sm leading-relaxed text-[#6F6E69] dark:text-[#878580]">A few favorite hikes through Peru, the Canadian Rockies, Iceland, and the White Mountains.</p>
+        <p className="text-sm leading-relaxed text-[#6F6E69] dark:text-[#878580]">Some favorite hikes. Tap one to find it on the map.</p>
       </div>
 
       <section ref={mapContainerRef} aria-label="Hiking destinations" className="scroll-mt-6 rounded-lg overflow-hidden border border-[#E6E4D9] dark:border-[#282726]">
         <div className="px-4 py-3 flex flex-wrap items-center justify-between gap-3 bg-[#FFFCF0] dark:bg-[#161615]">
-          <p className="font-serif text-sm">{selectedHike?.name || 'Places I’ve hiked'}</p>
+          <p className="font-serif text-sm">{selectedHike?.name || 'Where I’ve hiked'}</p>
           <div className="flex flex-wrap gap-1.5">
             {REGIONS.map(region => (
               <button key={region.id} type="button" aria-pressed={activeRegion === region.id} onClick={() => selectRegion(region)} className={`rounded-full px-2.5 py-1 text-[11px] transition-colors ${activeRegion === region.id ? 'bg-[#E6E4D9] text-[#100F0F] dark:bg-[#343B34] dark:text-[#CECDC3]' : 'text-[#6F6E69] dark:text-[#878580] hover:bg-[#F2F0E5] dark:hover:bg-[#282726]'}`}>{region.label}</button>

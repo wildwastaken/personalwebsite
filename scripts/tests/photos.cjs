@@ -36,7 +36,7 @@ async function main() {
   const {getPhotos} = load('lib/getPhotos.ts', {'./photoAssets': sources})
   const GalleryImage = load('components/GalleryImage.tsx', {'@/lib/photoAssets': sources}).default
   const photos = getPhotos()
-  for (const filename of ['jasper-rockies-fav.jpeg', 'lafayette-ridge-fav.jpeg', 'princeton-campus-fav.jpeg']) {
+  for (const filename of ['jasper-rockies-fav.jpeg', 'lafayette-ridge-fav.jpeg']) {
     const asset = manifest.photos[filename]
     assert.ok(asset.height > asset.width, `${filename}: stale EXIF tags do not turn upright portraits sideways`)
   }
