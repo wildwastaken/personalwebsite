@@ -76,7 +76,7 @@ export default function ExpeditionMap({ hikes, selectedHike, destination, onSele
               <div className="p-2 font-serif text-[#100F0F]">
                 <p className="text-[11px] text-[#6F6E69] mb-1">{selectedHike.location}, {selectedHike.country}</p>
                 <h3 className="text-base font-bold leading-snug">{selectedHike.name}</h3>
-                <p className="text-xs text-[#6F6E69] mt-2">{selectedHike.distance} · {selectedHike.elevation}</p>
+                <p className="text-xs text-[#6F6E69] mt-2">{[selectedHike.distance, selectedHike.elevation].filter(Boolean).join(' · ')}</p>
                 {!!selectedHike.photos?.length && <button type="button" onClick={() => onPhotos(selectedHike)} className="text-xs underline underline-offset-4 mt-3">View photos →</button>}
               </div>
             </Popup>

@@ -859,39 +859,6 @@
         }
       ]
     },
-    "princeton-campus-fav 2.jpeg": {
-      "fingerprint": "646805967cddb03a0467606a324943ecb1efc81bb8e0def6ccecabbbcd1a865b",
-      "width": 1536,
-      "height": 2048,
-      "originalSrc": "/images/gallery/princeton-campus-fav%202.jpeg",
-      "placeholder": "#766f69",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 7826
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 18700
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 30146
-        },
-        {
-          "src": "/images/gallery/optimized/princeton-campus-fav-2-646805967cdd-1600.webp",
-          "width": 1536,
-          "height": 2048,
-          "bytes": 77668
-        }
-      ]
-    },
     "princeton-campus-fav.jpeg": {
       "fingerprint": "f38cb2744d00256d62af59403c8db93e3a032e4d1bd4ee89300184c0d4d7b2ad",
       "width": 1200,
@@ -1025,35 +992,5 @@
       ]
     }
   },
-  "aliases": {
-    "adam-banff 2.jpeg": "adam-banff.jpeg",
-    "beaconfalls 2.jpeg": "beaconfalls.jpeg",
-    "connecticut-coast-fav 2.jpeg": "connecticut-coast-fav.jpeg",
-    "iceland 2.jpeg": "iceland.jpeg",
-    "iceland-gullfoss-fav 2.jpeg": "iceland-gullfoss-fav.jpeg",
-    "iceland-skogafoss-fav 2.jpeg": "iceland-skogafoss-fav.jpeg",
-    "iceland1 2.jpeg": "iceland1.jpeg",
-    "jasper-rockies-fav 2.jpeg": "jasper-rockies-fav.jpeg",
-    "lafayette-ridge-fav 2.jpeg": "lafayette-ridge-fav.jpeg",
-    "moraine 2.jpeg": "moraine.jpeg",
-    "moraine-lake-fav 2.jpeg": "moraine-lake-fav.jpeg",
-    "orient-point-fav 2.jpeg": "orient-point-fav.jpeg",
-    "pemi-loop 2.jpeg": "pemi-loop.jpeg",
-    "pemi-loop-mark 2.jpeg": "pemi-loop-mark.jpeg",
-    "pemi-loop1 2.jpeg": "pemi-loop1.jpeg",
-    "pemi-loop2 2.jpeg": "pemi-loop2.jpeg",
-    "peru-cusco-plaza 2.jpeg": "peru-cusco-plaza.jpeg",
-    "peru-high-andes-pass 2.jpeg": "peru-high-andes-pass.jpeg",
-    "peru-humantay-trail-horses 2.jpeg": "peru-humantay-trail-horses.jpeg",
-    "peru-machu-picchu-citadel 2.jpeg": "peru-machu-picchu-citadel.jpeg",
-    "peru-machu-picchu-clouds 2.jpeg": "peru-machu-picchu-clouds.jpeg",
-    "peru-ollantaytambo-terraces 2.jpeg": "peru-ollantaytambo-terraces.jpeg",
-    "peru-salkantay-horse-trek 2.jpeg": "peru-salkantay-horse-trek.jpeg",
-    "peru-salkantay-pack-mule 2.jpeg": "peru-salkantay-pack-mule.jpeg",
-    "peru-salkantay-trail-allen 2.jpeg": "peru-salkantay-trail-allen.jpeg",
-    "peru-salkantay-valley-vista 2.jpeg": "peru-salkantay-valley-vista.jpeg",
-    "whistler 2.jpeg": "whistler.jpeg",
-    "whistler-powder-fav 2.jpeg": "whistler-powder-fav.jpeg",
-    "whistler1 2.jpeg": "whistler1.jpeg"
-  }
+  "aliases": {}
 }

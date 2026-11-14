@@ -170,7 +170,7 @@ export default function Home() {
         {/* Authentic About Prose */}
         <section className="bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[3px] border border-[#E6E4D9]/80 dark:border-[#282726]/80 p-3 sm:p-3.5 rounded-sm leading-relaxed text-[14px] sm:text-[14.5px] text-[#282726] dark:text-[#D4D2C9]">
           <p>
-            I first learned to write software during the pandemic building stock checkers and notification bots for neighbors in Connecticut. At Princeton, I study computer systems, economics, and moral philosophy, and hike alpine passes across Peru, the Canadian Rockies, and Iceland. Outside coursework and terminal, I spend time cycling country roads, reading theology and literature, or cooking with close friends.
+            I first learned to write software during the pandemic building stock checkers and notification bots for neighbors in Connecticut. At Princeton, I study computer systems, economics, and moral philosophy, and hike alpine passes across Peru, the Canadian Rockies, and Iceland. Outside of class and the terminal, I spend time cycling country roads, reading theology and literature, or cooking with close friends.
           </p>
         </section>
 

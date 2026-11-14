@@ -4,7 +4,8 @@ import Navigation from '@/components/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider'
 
 export const metadata: Metadata = {
-  title: 'Allen Liu',
+  metadataBase: new URL('https://allenliu.dev'),
+  title: { default: 'Allen Liu', template: '%s · Allen Liu' },
   description: 'Projects, hikes, and photos. Senior at Princeton University.',
   keywords: ['Allen Liu', 'Princeton University', 'Projects', 'Hikes', 'Photos', 'Software'],
   authors: [{ name: 'Allen Liu' }],
