@@ -4,6 +4,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import PixelScape from '@/components/PixelScape'
+import { getPhotoSources } from '@/lib/photoAssets'
+
+const FEATURED_PHOTOS = [
+  { file: 'peru-huayna-picchu-edge.jpeg', alt: 'On top of Huayna Picchu' },
+  { file: 'lafayette-ridge-fav.jpeg', alt: 'Franconia Ridge in the early light' },
+  { file: 'iceland-diamond-beach.jpeg', alt: 'Diamond Beach, Iceland' },
+  { file: 'moraine.jpeg', alt: 'Moraine Lake, Banff' },
+]
 
 interface SpotifyData {
   isPlaying: boolean
@@ -115,7 +123,7 @@ export default function Home() {
             </div>
 
             <p className="col-span-2 text-base text-[#282726] dark:text-[#D4D2C9] leading-relaxed">
-              I like making small tools that solve real problems for people I know. When I&apos;m not at a keyboard, I&apos;m usually on a trail.
+              Most of my time goes to classes and building things, usually small tools for me or my friends. The rest goes to reading, biking, cooking with friends, and a big hiking trip whenever I can fit one in.
             </p>
 
             {/* Links */}
@@ -166,13 +174,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Authentic About Prose */}
-        <section className="bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[3px] border border-[#E6E4D9]/80 dark:border-[#282726]/80 p-3 sm:p-3.5 rounded-sm leading-relaxed text-[14px] sm:text-[14.5px] text-[#282726] dark:text-[#D4D2C9]">
-          <p>
-            My first program helped neighbors find essentials during the pandemic, and I&apos;ve been building things ever since. Outside of that I&apos;m reading, biking, cooking with friends, or planning the next hike.
-          </p>
-        </section>
-
         {/* Recent Trips Section */}
         <section className="space-y-2">
           <div className="flex items-baseline justify-between border-b border-[#E6E4D9] dark:border-[#282726] pb-1">
@@ -217,6 +218,43 @@ export default function Home() {
                 31 miles over Franconia Ridge, from 3:30 a.m. to 7:50 p.m.
               </p>
             </Link>
+          </div>
+        </section>
+        {/* A few photos */}
+        <section className="space-y-2">
+          <div className="flex items-baseline justify-between border-b border-[#E6E4D9] dark:border-[#282726] pb-1">
+            <h2 className="font-serif text-base sm:text-lg font-bold tracking-tight text-[#100F0F] dark:text-[#CECDC3]">
+              Photos
+            </h2>
+            <Link
+              href="/photos"
+              className="font-mono text-xs text-[#6F6E69] dark:text-[#878580] hover:text-[#100F0F] dark:hover:text-[#CECDC3]"
+            >
+              all photos &rarr;
+            </Link>
+          </div>
+          <div className="grid grid-cols-4 gap-1.5 sm:gap-2.5">
+            {FEATURED_PHOTOS.map(({ file, alt }) => {
+              const { src, srcSet, placeholder } = getPhotoSources(`/images/gallery/${file}`)
+              return (
+                <Link
+                  key={file}
+                  href="/photos"
+                  className="block aspect-square overflow-hidden rounded-sm border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#E6E4D9] dark:bg-[#282726]"
+                  style={placeholder ? { backgroundColor: placeholder } : undefined}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={src}
+                    srcSet={srcSet}
+                    sizes="(max-width: 639px) 25vw, 200px"
+                    alt={alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-opacity hover:opacity-85"
+                  />
+                </Link>
+              )
+            })}
           </div>
         </section>
       </div>
