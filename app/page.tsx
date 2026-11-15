@@ -199,11 +199,11 @@ export default function Home() {
                 </span>
               </h3>
               <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
-                Up the Salkantay trail on horseback, plus a misty morning at Machu Picchu.
+                Christmas on horseback up toward Salkantay Pass, plus an early morning at Machu Picchu.
               </p>
             </Link>
 
-            <Link href="/hikes?trip=STA-03" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+            <Link href="/hikes?trip=STA-04" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
               <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
                 <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Canadian Rockies</span>
                 <span>July 2024</span>

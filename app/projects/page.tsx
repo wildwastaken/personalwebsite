@@ -64,9 +64,11 @@ const projects: Project[] = [
     title: 'Tranquil',
     year: '2021',
     award: '1st place, CT-STEM and CSEF 2021',
-    tagline: 'An iOS app from high school',
-    description: 'An iPhone app I built in high school. It won first place at the Connecticut science fairs.',
-    stack: ['Swift', 'iOS'],
+    tagline: 'The Whoop before Whoop',
+    description:
+      'An Apple Watch app I built in high school. It read your heart rate and HRV live, tapped your wrist with each new reading, and kept a week of history on your iPhone.',
+    stack: ['Swift', 'watchOS', 'HealthKit', 'Firebase'],
+    github: 'https://github.com/wildwastaken/tranquil',
   },
   {
     title: 'bareshelves',

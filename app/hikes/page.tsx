@@ -15,9 +15,9 @@ const ExpeditionMap = dynamic(() => import('@/components/ExpeditionMap'), {
 
 const REGIONS = [
   { id: 'all', label: 'All places', lat: 25, lng: -40, zoom: 1.8 },
-  { id: 'peru', label: 'Peru', lat: -13.25, lng: -72.55, zoom: 8.5 },
+  { id: 'peru', label: 'Peru', lat: -13.26, lng: -72.44, zoom: 9 },
   { id: 'canada', label: 'Canada', lat: 51.38, lng: -116.2, zoom: 9 },
-  { id: 'iceland', label: 'Iceland', lat: 63.75, lng: -19.3, zoom: 8 },
+  { id: 'iceland', label: 'Iceland', lat: 63.9, lng: -19.3, zoom: 6.8 },
   { id: 'usa', label: 'White Mountains', lat: 44.17, lng: -71.58, zoom: 9.5 },
 ]
 
@@ -95,7 +95,7 @@ export default function Hikes() {
                 <span className="font-mono text-[11px] text-[#6F6E69] dark:text-[#878580] pt-1">{hike.date}</span>
               </div>
               <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-[#6F6E69] dark:text-[#878580]">
-                <span><span className="text-[#100F0F] dark:text-[#CECDC3]">Distance</span> {hike.distance}</span>
+                {hike.distance && <span><span className="text-[#100F0F] dark:text-[#CECDC3]">Distance</span> {hike.distance}</span>}
                 {hike.elevation && <span><span className="text-[#100F0F] dark:text-[#CECDC3]">Elevation</span> {hike.elevation}</span>}
               </div>
               <p className="text-sm leading-relaxed text-[#282726] dark:text-[#D4D2C9] max-w-prose">{hike.description}</p>
