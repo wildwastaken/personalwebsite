@@ -48,10 +48,7 @@ export const hikes: Hike[] = [
     coverImage: '/images/gallery/peru-salkantay-horse-trek.jpeg',
     photos: [
       { src: '/images/gallery/peru-salkantay-horse-trek.jpeg', caption: 'On horseback below Salkantay' },
-      { src: '/images/gallery/peru-salkantay-trail-allen.jpeg', caption: 'Riding up the trail' },
-      { src: '/images/gallery/peru-salkantay-pack-mule.jpeg', caption: 'Just below the pass' },
       { src: '/images/gallery/peru-salkantay-valley-vista.jpeg', caption: 'Heading back down the valley' },
-      { src: '/images/gallery/peru-humantay-trail-horses.jpeg', caption: 'Our horses' },
     ],
     description: 'Christmas morning. Left Soraypampa on horseback at dawn, stood on the pass at 8:30, and was back down by 11.',
   },

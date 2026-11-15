@@ -95,7 +95,7 @@ const PRESET_PALETTES: Palette[] = [
 ]
 
 const SAMPLE_IMAGES = [
-  { name: 'Salkantay Andes', src: '/images/gallery/peru-salkantay-trail-allen.jpeg' },
+  { name: 'Salkantay Andes', src: '/images/gallery/peru-salkantay-valley-vista.jpeg' },
   { name: 'Moraine Lake', src: '/images/gallery/moraine-lake-fav.jpeg' },
   { name: 'Lafayette Ridge', src: '/images/gallery/lafayette-ridge-fav.jpeg' },
   { name: 'Skógafoss Gorge', src: '/images/gallery/iceland-skogafoss-fav.jpeg' },

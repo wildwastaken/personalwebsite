@@ -925,39 +925,6 @@
         }
       ]
     },
-    "peru-humantay-trail-horses.jpeg": {
-      "fingerprint": "0dedbf545794d86f068129a2c70f775ebc361f1a4344bd0b7e18d8c0052efc1e",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/peru-humantay-trail-horses.jpeg",
-      "placeholder": "#7f7771",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-320.webp",
-          "width": 320,
-          "height": 240,
-          "bytes": 15202
-        },
-        {
-          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-640.webp",
-          "width": 640,
-          "height": 480,
-          "bytes": 56292
-        },
-        {
-          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-960.webp",
-          "width": 960,
-          "height": 720,
-          "bytes": 116102
-        },
-        {
-          "src": "/images/gallery/optimized/peru-humantay-trail-horses-0dedbf545794-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 353236
-        }
-      ]
-    },
     "peru-machu-picchu-citadel.jpeg": {
       "fingerprint": "a3b3309d4a980cae2905294a4596a4220a44ad1c4385fd709f7d20c2ab672176",
       "width": 1600,
@@ -1048,72 +1015,6 @@
           "width": 1200,
           "height": 1600,
           "bytes": 395370
-        }
-      ]
-    },
-    "peru-salkantay-pack-mule.jpeg": {
-      "fingerprint": "ab9dbe7d7403202386a82710180a850f42ba53697b8e5c30a189027419d2a4f9",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/peru-salkantay-pack-mule.jpeg",
-      "placeholder": "#938d84",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 25042
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 76192
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 130090
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-pack-mule-ab9dbe7d7403-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 250220
-        }
-      ]
-    },
-    "peru-salkantay-trail-allen.jpeg": {
-      "fingerprint": "98f5d0c568b8794cdb178c1792643361ed58a82a4e02612c9339cc1e2dd2c27f",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/peru-salkantay-trail-allen.jpeg",
-      "placeholder": "#8d8b86",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 29258
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 108958
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 218252
-        },
-        {
-          "src": "/images/gallery/optimized/peru-salkantay-trail-allen-98f5d0c568b8-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 406332
         }
       ]
     },
