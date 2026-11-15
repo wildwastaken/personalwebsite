@@ -75,7 +75,7 @@ const projects: Project[] = [
     year: '2020',
     tagline: 'Restock alerts during the pandemic',
     description:
-      'When stores ran out of essentials in 2020, these bots watched Amazon and texted people in my town when things came back in stock. It grew out of AmznMonitor, my first real project.',
+      'When stores ran out of essentials in 2020, these bots watched Amazon and sent a notification when things came back in stock. It grew out of AmznMonitor, my first real project.',
     stack: ['Python', 'Selenium'],
     github: 'https://github.com/wildwastaken/amznmonitor',
     live: 'https://bareshelves.allenliu.dev',

@@ -169,7 +169,7 @@ export default function Home() {
         {/* Authentic About Prose */}
         <section className="bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[3px] border border-[#E6E4D9]/80 dark:border-[#282726]/80 p-3 sm:p-3.5 rounded-sm leading-relaxed text-[14px] sm:text-[14.5px] text-[#282726] dark:text-[#D4D2C9]">
           <p>
-            My first program helped neighbors find essentials during the pandemic, and I&apos;ve been building things ever since: a guitar tab printer for a friend, a calendar for Princeton&apos;s event emails, a physical therapy tracker at HackMIT. Outside of that I&apos;m reading, biking, cooking with friends, or planning the next hike.
+            My first program helped neighbors find essentials during the pandemic, and I&apos;ve been building things ever since. Outside of that I&apos;m reading, biking, cooking with friends, or planning the next hike.
           </p>
         </section>
 
