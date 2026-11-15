@@ -8,9 +8,9 @@ import { getPhotoSources } from '@/lib/photoAssets'
 
 const FEATURED_PHOTOS = [
   { file: 'peru-huayna-picchu-edge.jpeg', alt: 'On top of Huayna Picchu' },
-  { file: 'lafayette-ridge-fav.jpeg', alt: 'Franconia Ridge in the early light' },
-  { file: 'peru-salkantay-dusk-drone.jpeg', alt: 'Salkantay at dusk, from the drone' },
-  { file: 'moraine.jpeg', alt: 'Moraine Lake, Banff' },
+  { file: 'lafayette-ridge-fav.jpeg', alt: 'Franconia Ridge, early' },
+  { file: 'peru-salkantay-dusk-drone.jpeg', alt: 'Salkantay at last light' },
+  { file: 'iceland-arnarstapi-arch.jpeg', alt: 'The arch at Arnarstapi' },
 ]
 
 interface SpotifyData {

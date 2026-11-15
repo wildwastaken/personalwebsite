@@ -67,36 +67,36 @@
         }
       ]
     },
-    "cape-breton-bonfire.jpeg": {
-      "fingerprint": "6b86df8444b41105ed08b90d380699b7911034491acd86e3c05e68336d8c905f",
+    "cape-breton-bonfire-crew.jpeg": {
+      "fingerprint": "af73739a650629a6d784837a81d7e7e128fea842204a3682b0c39b1cd8e87b9b",
       "width": 1200,
       "height": 1600,
-      "originalSrc": "/images/gallery/raw/cape-breton-bonfire.jpeg",
-      "placeholder": "#483424",
+      "originalSrc": "/images/gallery/raw/cape-breton-bonfire-crew.jpeg",
+      "placeholder": "#231109",
       "variants": [
         {
-          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-320.webp",
+          "src": "/images/gallery/optimized/cape-breton-bonfire-crew-af73739a6506-320.webp",
           "width": 320,
           "height": 427,
-          "bytes": 20314
+          "bytes": 10610
         },
         {
-          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-640.webp",
+          "src": "/images/gallery/optimized/cape-breton-bonfire-crew-af73739a6506-640.webp",
           "width": 640,
           "height": 853,
-          "bytes": 70306
+          "bytes": 30682
         },
         {
-          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-960.webp",
+          "src": "/images/gallery/optimized/cape-breton-bonfire-crew-af73739a6506-960.webp",
           "width": 960,
           "height": 1280,
-          "bytes": 139976
+          "bytes": 52126
         },
         {
-          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-1600.webp",
+          "src": "/images/gallery/optimized/cape-breton-bonfire-crew-af73739a6506-1600.webp",
           "width": 1200,
           "height": 1600,
-          "bytes": 258310
+          "bytes": 92266
         }
       ]
     },
@@ -133,6 +133,72 @@
         }
       ]
     },
+    "emerald-lake-swim.jpeg": {
+      "fingerprint": "00a48a38009ad072712348c96bb88deba8e184efe2d40aed294460dcdfe221bd",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/emerald-lake-swim.jpeg",
+      "placeholder": "#769096",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 24036
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 91310
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 184532
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 332116
+        }
+      ]
+    },
+    "emerald-lake.jpeg": {
+      "fingerprint": "7951ac71db7d3de046588023bb4d6a491d20805b6b153fdd0ced5dc188533bf9",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/emerald-lake.jpeg",
+      "placeholder": "#709694",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/emerald-lake-7951ac71db7d-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 7568
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-7951ac71db7d-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 33608
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-7951ac71db7d-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 76688
+        },
+        {
+          "src": "/images/gallery/optimized/emerald-lake-7951ac71db7d-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 256968
+        }
+      ]
+    },
     "galehead-hut.jpeg": {
       "fingerprint": "b38e044e325b47176e36f28110252aa5ac4e8056ebdb62e8edfcd5cc1b1a265d",
       "width": 1600,
@@ -166,36 +232,36 @@
         }
       ]
     },
-    "galehead-sunset.jpeg": {
-      "fingerprint": "2c4a26a57abc427df05ce28aba3e4f4265293a558c1cf38d9075e40e687e6f15",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/galehead-sunset.jpeg",
-      "placeholder": "#5c605f",
+    "iceland-arnarstapi-arch.jpeg": {
+      "fingerprint": "bbf52fda2afcf722b292541682336481c0df00d6685093e83efc7ef6b24913cb",
+      "width": 1199,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/iceland-arnarstapi-arch.jpeg",
+      "placeholder": "#778b9d",
       "variants": [
         {
-          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-320.webp",
+          "src": "/images/gallery/optimized/iceland-arnarstapi-arch-bbf52fda2afc-320.webp",
           "width": 320,
-          "height": 240,
-          "bytes": 7936
+          "height": 427,
+          "bytes": 11950
         },
         {
-          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-640.webp",
+          "src": "/images/gallery/optimized/iceland-arnarstapi-arch-bbf52fda2afc-640.webp",
           "width": 640,
-          "height": 480,
-          "bytes": 30116
+          "height": 854,
+          "bytes": 42656
         },
         {
-          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-960.webp",
+          "src": "/images/gallery/optimized/iceland-arnarstapi-arch-bbf52fda2afc-960.webp",
           "width": 960,
-          "height": 720,
-          "bytes": 61672
+          "height": 1281,
+          "bytes": 82866
         },
         {
-          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 190906
+          "src": "/images/gallery/optimized/iceland-arnarstapi-arch-bbf52fda2afc-1600.webp",
+          "width": 1199,
+          "height": 1600,
+          "bytes": 152240
         }
       ]
     },
@@ -262,6 +328,39 @@
           "width": 1600,
           "height": 1200,
           "bytes": 463334
+        }
+      ]
+    },
+    "iceland-kerid.jpeg": {
+      "fingerprint": "3e398893ad35f846a4382039cabd891c9332f7bd099e859ba1c257160689cfe4",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/iceland-kerid.jpeg",
+      "placeholder": "#9e8a7c",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-kerid-3e398893ad35-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 15902
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-kerid-3e398893ad35-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 71484
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-kerid-3e398893ad35-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 168668
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-kerid-3e398893ad35-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 555220
         }
       ]
     },
@@ -400,6 +499,39 @@
           "width": 2560,
           "height": 494,
           "bytes": 123326
+        }
+      ]
+    },
+    "iceland-vestrahorn.jpeg": {
+      "fingerprint": "0bc19c459cb557800930537d82fabc34b01731dc9de04d4688ce20805dca2402",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/iceland-vestrahorn.jpeg",
+      "placeholder": "#908c89",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-vestrahorn-0bc19c459cb5-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 9586
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-vestrahorn-0bc19c459cb5-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 42402
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-vestrahorn-0bc19c459cb5-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 97204
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-vestrahorn-0bc19c459cb5-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 320296
         }
       ]
     },
