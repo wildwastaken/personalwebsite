@@ -110,7 +110,7 @@ export default function Hikes() {
               )}
               <div className="flex flex-wrap gap-5 text-xs text-[#6F6E69] dark:text-[#878580]">
                 <button type="button" onClick={() => locateHike(hike)} className="underline underline-offset-4 hover:text-[#100F0F] dark:hover:text-[#CECDC3]">Show on map ↗</button>
-                {!!hike.photos?.length && <button type="button" onClick={() => openPhotos(hike)} className="underline underline-offset-4 hover:text-[#100F0F] dark:hover:text-[#CECDC3]">View {hike.photos.length} photos →</button>}
+                {!!hike.photos?.length && <button type="button" onClick={() => openPhotos(hike)} className="underline underline-offset-4 hover:text-[#100F0F] dark:hover:text-[#CECDC3]">View {hike.photos.length} photo{hike.photos.length === 1 ? '' : 's'} →</button>}
               </div>
             </article>
           ))}
