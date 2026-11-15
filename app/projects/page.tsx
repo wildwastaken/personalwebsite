@@ -13,6 +13,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'TopoPixel',
+    year: '2026',
+    tagline: 'Turn photos into pixel art',
+    description:
+      'Drop in a photo and get a dithered, pixel-art version back. Choose the resolution and palette, then save it as a PNG. It runs entirely in your browser.',
+    stack: ['TypeScript', 'Canvas'],
+    github: 'https://github.com/wildwastaken/personalwebsite',
+    live: '/artgen',
+  },
+  {
     title: 'tabs',
     year: '2025',
     tagline: 'Guitar tabs you can print',
@@ -32,6 +42,15 @@ const projects: Project[] = [
     github: 'https://github.com/wildwastaken/TigerMail',
   },
   {
+    title: 'gifting',
+    year: '2025',
+    tagline: 'A visual essay for VIS 208',
+    description: 'A small web essay about why we give gifts, made for a Princeton design class.',
+    stack: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/wildwastaken/gifting',
+    live: 'https://wildwastaken.github.io/gifting/',
+  },
+  {
     title: 'GeomPT',
     year: '2024',
     award: '2nd place overall, HackMIT 2024',
@@ -42,23 +61,13 @@ const projects: Project[] = [
     github: 'https://github.com/orgs/GeomPT/repositories',
   },
   {
-    title: 'TopoPixel',
-    year: '2026',
-    tagline: 'Turn photos into pixel art',
-    description:
-      'Drop in a photo and get a dithered, pixel-art version back. Choose the resolution and palette, then save it as a PNG. It runs entirely in your browser.',
-    stack: ['TypeScript', 'Canvas'],
+    title: 'allenliu.dev',
+    year: '2023',
+    tagline: 'This site',
+    description: 'Next.js, a Mapbox globe for the hikes, and a little live widget showing what I’m listening to and reading.',
+    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Mapbox'],
     github: 'https://github.com/wildwastaken/personalwebsite',
-    live: '/artgen',
-  },
-  {
-    title: 'gifting',
-    year: '2025',
-    tagline: 'A visual essay for VIS 208',
-    description: 'A small web essay about why we give gifts, made for a Princeton design class.',
-    stack: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/wildwastaken/gifting',
-    live: 'https://wildwastaken.github.io/gifting/',
+    live: 'https://allenliu.dev',
   },
   {
     title: 'Tranquil',
@@ -79,15 +88,6 @@ const projects: Project[] = [
     stack: ['Python', 'Selenium'],
     github: 'https://github.com/wildwastaken/amznmonitor',
     live: 'https://bareshelves.allenliu.dev',
-  },
-  {
-    title: 'allenliu.dev',
-    year: '2023 – now',
-    tagline: 'This site',
-    description: 'Next.js, a Mapbox globe for the hikes, and a little live widget showing what I’m listening to and reading.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Mapbox'],
-    github: 'https://github.com/wildwastaken/personalwebsite',
-    live: 'https://allenliu.dev',
   },
 ]
 
