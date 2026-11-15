@@ -46,7 +46,7 @@ const catalog: PhotoMeta[] = [
   { file: 'iceland-gullfoss-fav.jpeg', ...ICELAND, alt: 'The Brúará running blue past grazing sheep', location: 'Brúará, Iceland', date: 'May 2023', coordinates: '64.2566, -20.5147' },
   { file: 'peru-salkantay-trail-allen.jpeg', ...PERU, alt: 'Riding up the Salkantay trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3591, -72.5596' },
   { file: 'moraine.jpeg', ...ROCKIES, alt: 'Moraine Lake and the Valley of the Ten Peaks', location: 'Moraine Lake, Banff', date: 'July 2024', coordinates: '51.3275, -116.1814' },
-  { file: 'pemi-loop-mark.jpeg', ...WHITES, alt: 'A friend on the ridge north of Lafayette', location: 'Franconia Ridge, NH', date: 'Aug 2025', coordinates: '44.1610, -71.6445' },
+  { file: 'pemi-loop-mark.jpeg', ...WHITES, alt: 'A friend on top of Mount Lafayette', location: 'Mount Lafayette, NH', date: 'Aug 2025', coordinates: '44.1610, -71.6445' },
   { file: 'adam-banff.jpeg', ...ROCKIES, alt: 'Sitting on the Engine Bridge with the Three Sisters behind', location: 'Canmore, Alberta', date: 'July 2024', coordinates: '51.0915, -115.3698' },
   { file: 'lake-louise-sunrise.jpeg', ...ROCKIES, alt: 'Sunrise on the trail above Lake Louise', location: 'Lake Louise, Banff', date: 'July 2024', coordinates: '51.4211, -116.2375' },
   { file: 'peru-salkantay-valley-vista.jpeg', ...PERU, alt: 'Looking down the valley from the Salkantay trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3767, -72.5642' },
@@ -58,7 +58,7 @@ const catalog: PhotoMeta[] = [
   { file: 'peru-high-andes-pass.jpeg', ...PERU, alt: 'Clouds over the Salkantay valley', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3650, -72.5607' },
   { file: 'peru-salkantay-pack-mule.jpeg', ...PERU, alt: 'A curious horse on the trail', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3495, -72.5632' },
   { file: 'pemi-loop2.jpeg', ...WHITES, alt: 'The sun coming up through the trees', location: 'White Mountains, NH', date: 'Aug 2025', coordinates: '44.1050, -71.6784' },
-  { file: 'iceland1.jpeg', ...ICELAND, alt: 'A town on the south coast from the hill above it', location: 'South Iceland', date: 'May 2023' },
+  { file: 'iceland1.jpeg', ...ICELAND, alt: 'Vík from the hill above town', location: 'Vík, Iceland', date: 'May 2023' },
   { file: 'orient-point-fav.jpeg', ...HOME, alt: 'Friends on the rocks at sunset', location: 'Orient Point, NY', date: 'May 2025', coordinates: '41.0263, -72.5391' },
   { file: 'beaconfalls.jpeg', ...HOME, alt: 'Dusk over the Naugatuck valley', location: 'Beacon Falls, CT', date: 'Dec 2024', coordinates: '41.4404, -73.0581' },
 ]

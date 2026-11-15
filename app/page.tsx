@@ -199,22 +199,22 @@ export default function Home() {
                 </span>
               </h3>
               <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
-                Christmas on horseback up toward Salkantay Pass, plus an early morning at Machu Picchu.
+                Christmas morning on Salkantay Pass, and Huayna Picchu above the ruins.
               </p>
             </Link>
 
-            <Link href="/hikes?trip=STA-04" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+            <Link href="/hikes?trip=STA-09" className="group block no-underline p-2.5 sm:p-3 border border-[#E6E4D9]/90 dark:border-[#282726]/90 bg-[#FFFCF0]/85 dark:bg-[#161615]/85 backdrop-blur-[4px] rounded-sm space-y-1 hover:border-[#6F6E69] dark:hover:border-[#878580] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
               <div className="flex flex-wrap items-baseline justify-between font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
-                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">Canadian Rockies</span>
-                <span>July 2024</span>
+                <span className="font-bold text-[#100F0F] dark:text-[#CECDC3]">White Mountains</span>
+                <span>Aug 2025</span>
               </div>
               <h3 className="font-serif text-sm font-bold text-[#100F0F] dark:text-[#CECDC3]">
                 <span className="group-hover:underline">
-                  Sentinel Pass &amp; Moraine Lake
+                  Pemi Loop in a day
                 </span>
               </h3>
               <p className="text-xs text-[#6F6E69] dark:text-[#878580] leading-relaxed">
-                Up through Larch Valley to the pass, with Moraine Lake below.
+                31 miles over Franconia Ridge, from 3:30 a.m. to 7:50 p.m.
               </p>
             </Link>
           </div>

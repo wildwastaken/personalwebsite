@@ -9,7 +9,7 @@ const Home = load('app/page.tsx', {
   'next/image': 'image', 'next/link': 'link', '@/components/PixelScape': 'landscape',
 }).default
 const home = Home()
-const cards = ['STA-02', 'STA-04'].map(id => find(home, node => node.props?.href === `/hikes?trip=${id}`))
+const cards = ['STA-02', 'STA-09'].map(id => find(home, node => node.props?.href === `/hikes?trip=${id}`))
 assert.ok(cards.every(Boolean), 'Both recent-trip cards retain destination links')
 
 function mapHarness() {
@@ -52,7 +52,7 @@ for (const card of cards) {
   selectLink(tree)
   tree = render()
   const panel = find(tree, node => node.type === 'map-panel')
-  const expected = query.get('trip') === 'STA-02' ? [-72.5632, -13.3495] : [-116.1847, 51.3297]
+  const expected = query.get('trip') === 'STA-02' ? [-72.563, -13.3494] : [-71.5533, 44.1689]
   const m = mapHarness()
   let mapTree = m.render(panel.props)
   let map = find(mapTree, node => node.type === 'map')
