@@ -76,9 +76,9 @@ export default function Home() {
       .catch(() => {
         setReadingData({
           isReading: false,
-          title: 'The Cost of Discipleship',
-          author: 'Dietrich Bonhoeffer',
-          bookUrl: 'https://hardcover.app/@allenliu/',
+          title: '',
+          author: '',
+          bookUrl: '',
         })
         setIsLoadingReading(false)
       })
@@ -307,7 +307,9 @@ export default function Home() {
                   {readingData.author && <p className="text-xs text-[#6F6E69] dark:text-[#878580]">by {readingData.author}</p>}
                 </>
               ) : (
-                <p className="text-xs text-[#6F6E69] dark:text-[#878580]">Nothing recorded</p>
+                <a href="https://hardcover.app/@allenliu/" target="_blank" rel="noopener noreferrer" className="text-xs text-[#6F6E69] dark:text-[#878580] hover:underline underline-offset-4">
+                  My shelf on Hardcover ↗
+                </a>
               )}
             </div>
           </div>

@@ -79,6 +79,10 @@ export const hikes: Hike[] = [
     date: 'Dec 20, 2025',
     lat: -13.2559,
     lng: -72.3142,
+    coverImage: '/images/gallery/peru-ollantaytambo-edge.jpeg',
+    photos: [
+      { src: '/images/gallery/peru-ollantaytambo-edge.jpeg', caption: 'Long way down' },
+    ],
     description: 'From town up past the old Inca quarries to about 3,900 m, for the view back across the valley.',
   },
   {

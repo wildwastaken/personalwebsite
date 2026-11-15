@@ -68,6 +68,7 @@ const catalog: PhotoMeta[] = [
   { file: 'iceland-gullfoss-fav.jpeg', ...ICELAND, alt: 'Brúará', location: 'Brúará, Iceland', date: 'May 2023', coordinates: '64.2566, -20.5147' },
   { file: 'orient-point-fav.jpeg', ...HOME, alt: 'Orient Point', location: 'Orient Point, NY', date: 'May 2025', coordinates: '41.0263, -72.5391' },
   { file: 'peru-salkantay-valley-vista.jpeg', ...PERU, alt: 'Down the valley', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3767, -72.5642' },
+  { file: 'peru-ollantaytambo-edge.jpeg', ...PERU, alt: 'Long way down', location: 'Above Ollantaytambo', date: 'Dec 2025', coordinates: '-13.2636, -72.3103' },
   { file: 'peru-high-andes-pass.jpeg', ...PERU, alt: 'Clouds rolling in', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3650, -72.5607' },
   { file: 'pemi-loop-mark.jpeg', ...WHITES, alt: 'Top of Lafayette', location: 'Mount Lafayette, NH', date: 'Aug 2025', coordinates: '44.1610, -71.6445' },
   { file: 'pemi-loop2.jpeg', ...WHITES, alt: 'Sunrise through the trees', location: 'White Mountains, NH', date: 'Aug 2025', coordinates: '44.1050, -71.6784' },

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 
-const HARDCOVER_TOKEN = process.env.HARDCOVER_TOKEN
+// Hardcover's settings page copies the token with a "Bearer " prefix, so accept either form.
+const HARDCOVER_TOKEN = process.env.HARDCOVER_TOKEN?.trim().replace(/^Bearer\s+/i, '')
 
 export async function GET() {
   if (!HARDCOVER_TOKEN) {
@@ -49,7 +50,8 @@ export async function GET() {
     })
 
     if (!response.ok) {
-      throw new Error(`Hardcover API responded with status: ${response.status}`)
+      const body = await response.text().catch(() => '')
+      throw new Error(`Hardcover API responded with status ${response.status}: ${body.slice(0, 200)}`)
     }
 
     const { data, errors } = await response.json()
@@ -101,7 +103,8 @@ export async function GET() {
     // Return a user-friendly error response
     return NextResponse.json({
       isReading: false,
-      title: 'Unable to load',
+      unavailable: true,
+      title: '',
       author: '',
       bookUrl: '',
       coverImage: ''

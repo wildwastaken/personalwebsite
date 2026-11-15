@@ -1024,6 +1024,39 @@
         }
       ]
     },
+    "peru-ollantaytambo-edge.jpeg": {
+      "fingerprint": "8b77196afff3478920834022a5f3369e963f4567e6e5f3147b213cd163d9e626",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-ollantaytambo-edge.jpeg",
+      "placeholder": "#7b848b",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-edge-8b77196afff3-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 11982
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-edge-8b77196afff3-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 46618
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-edge-8b77196afff3-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 103876
+        },
+        {
+          "src": "/images/gallery/optimized/peru-ollantaytambo-edge-8b77196afff3-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 332140
+        }
+      ]
+    },
     "peru-salkantay-dusk-drone.jpeg": {
       "fingerprint": "40da9d9d006874f6ac2d4927258395defcd895f000eaef0cfb34df7ebb9f9d74",
       "width": 900,

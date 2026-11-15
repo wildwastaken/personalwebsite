@@ -21,6 +21,27 @@ const REGIONS = [
   { id: 'usa', label: 'White Mountains', lat: 44.17, lng: -71.58, zoom: 9.5 },
 ]
 
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+// "Dec 25, 2025" or "July 31 – Aug 2, 2024" -> pieces for the date column and a sort key.
+function parseHikeDate(date: string) {
+  const year = date.match(/(\d{4})\s*$/)?.[1] || ''
+  const parts = date.replace(/,?\s*\d{4}\s*$/, '').split(/\s*[–-]\s*/)
+  const short = (part: string) => {
+    const [month, day] = part.trim().split(/\s+/)
+    return { month: month.slice(0, 3), day: day || month }
+  }
+  const start = short(parts[0])
+  const end = parts[1] ? short(parts[1]) : null
+  const label = end
+    ? end.month === end.day ? `${start.month} ${start.day}–${end.day}` : `${start.month} ${start.day} – ${end.month} ${end.day}`
+    : `${start.month} ${start.day}`
+  const sortKey = Number(year) * 10000 + (MONTHS.indexOf(start.month.toLowerCase()) + 1) * 100 + Number(start.day)
+  return { label, year, sortKey }
+}
+
+const sortedHikes = [...hikes].sort((a, b) => parseHikeDate(b.date).sortKey - parseHikeDate(a.date).sortKey)
+
 // Only this small child waits for URL parameters; the hikes render immediately.
 function TripFromLink({ onSelect }: { onSelect: (hike: Hike, scroll?: boolean) => void }) {
   const trip = useSearchParams().get('trip')
@@ -85,35 +106,40 @@ export default function Hikes() {
           <span className="font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">{hikes.length} trips</span>
         </div>
         <div className="divide-y divide-[#E6E4D9] dark:divide-[#282726]">
-          {hikes.map(hike => (
-            <article key={hike.num} className={`py-6 sm:py-7 space-y-4 ${selectedHike?.num === hike.num ? 'bg-[#F2F0E5]/40 dark:bg-[#1C1B1A]/40' : ''}`}>
-              <div className="flex flex-wrap items-start justify-between gap-x-5 gap-y-2">
-                <div className="space-y-1">
-                  <h3 className="font-serif text-xl font-bold tracking-tight">{hike.name}</h3>
-                  <p className="text-xs text-[#6F6E69] dark:text-[#878580]">{hike.location}, {hike.country}</p>
+          {sortedHikes.map(hike => {
+            const date = parseHikeDate(hike.date)
+            const stats = [hike.distance, hike.elevation].filter(Boolean)
+            return (
+              <article key={hike.num} className={`grid grid-cols-1 sm:grid-cols-[88px_minmax(0,1fr)] gap-x-6 gap-y-2 py-7 sm:py-8 ${selectedHike?.num === hike.num ? 'bg-[#F2F0E5]/40 dark:bg-[#1C1B1A]/40' : ''}`}>
+                <div className="flex items-baseline gap-2 sm:block sm:pt-1.5 font-mono">
+                  <p className="text-[13px] font-bold uppercase tracking-wider text-[#100F0F] dark:text-[#CECDC3]">{date.label}</p>
+                  <p className="text-[12px] text-[#6F6E69] dark:text-[#878580] sm:mt-0.5">{date.year}</p>
                 </div>
-                <span className="font-mono text-[11px] text-[#6F6E69] dark:text-[#878580] pt-1">{hike.date}</span>
-              </div>
-              <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-[#6F6E69] dark:text-[#878580]">
-                {hike.distance && <span><span className="text-[#100F0F] dark:text-[#CECDC3]">Distance</span> {hike.distance}</span>}
-                {hike.elevation && <span><span className="text-[#100F0F] dark:text-[#CECDC3]">Elevation</span> {hike.elevation}</span>}
-              </div>
-              <p className="text-sm leading-relaxed text-[#282726] dark:text-[#D4D2C9] max-w-prose">{hike.description}</p>
-              {!!hike.photos?.length && (
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                  {hike.photos.slice(0, 4).map((photo, index) => (
-                    <button key={photo.src} type="button" aria-label={`Open photo: ${photo.caption}`} onClick={() => openPhotos(hike, index)} className="group relative aspect-[4/3] rounded-md overflow-hidden bg-[#F2F0E5] dark:bg-[#282726] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
-                      <GalleryImage src={photo.src} alt={photo.caption} sizes="(max-width: 639px) calc((100vw - 50px) / 2), 200px" className="object-cover group-hover:scale-105 transition-transform duration-300" />
-                    </button>
-                  ))}
+                <div className="min-w-0 space-y-3">
+                  <div className="space-y-1">
+                    <h3 className="font-serif text-xl sm:text-2xl font-bold tracking-tight">{hike.name}</h3>
+                    <p className="font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
+                      {[`${hike.location}, ${hike.country}`, ...stats].join('  ·  ')}
+                    </p>
+                  </div>
+                  <p className="text-[15px] leading-relaxed text-[#282726] dark:text-[#D4D2C9] max-w-prose">{hike.description}</p>
+                  {!!hike.photos?.length && (
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+                      {hike.photos.slice(0, 4).map((photo, index) => (
+                        <button key={photo.src} type="button" aria-label={`Open photo: ${photo.caption}`} onClick={() => openPhotos(hike, index)} className="group relative aspect-[4/3] rounded-sm overflow-hidden bg-[#F2F0E5] dark:bg-[#282726] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                          <GalleryImage src={photo.src} alt={photo.caption} sizes="(max-width: 639px) calc((100vw - 50px) / 2), 180px" className="object-cover group-hover:scale-105 transition-transform duration-300" />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                  <div className="flex flex-wrap gap-x-5 gap-y-1 font-mono text-[11px] text-[#6F6E69] dark:text-[#878580]">
+                    <button type="button" onClick={() => locateHike(hike)} className="hover:text-[#100F0F] dark:hover:text-[#CECDC3] hover:underline underline-offset-4">show on map ↗</button>
+                    {!!hike.photos?.length && <button type="button" onClick={() => openPhotos(hike)} className="hover:text-[#100F0F] dark:hover:text-[#CECDC3] hover:underline underline-offset-4">{hike.photos.length} photo{hike.photos.length === 1 ? '' : 's'} →</button>}
+                  </div>
                 </div>
-              )}
-              <div className="flex flex-wrap gap-5 text-xs text-[#6F6E69] dark:text-[#878580]">
-                <button type="button" onClick={() => locateHike(hike)} className="underline underline-offset-4 hover:text-[#100F0F] dark:hover:text-[#CECDC3]">Show on map ↗</button>
-                {!!hike.photos?.length && <button type="button" onClick={() => openPhotos(hike)} className="underline underline-offset-4 hover:text-[#100F0F] dark:hover:text-[#CECDC3]">View {hike.photos.length} photo{hike.photos.length === 1 ? '' : 's'} →</button>}
-              </div>
-            </article>
-          ))}
+              </article>
+            )
+          })}
         </div>
       </section>
 
