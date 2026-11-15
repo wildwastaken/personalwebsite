@@ -6,7 +6,7 @@ const data = load('lib/hikes.ts')
 
 const Home = load('app/page.tsx', {
   react: {...React, useState: initial => [initial, () => {}], useEffect: () => {}},
-  'next/image': 'image', 'next/link': 'link', '@/components/PixelScape': 'landscape',
+  'next/image': 'image', 'next/link': 'link', '@/components/PixelScape': 'landscape', '@/lib/photoAssets': {getPhotoSources: src => ({src})},
 }).default
 const home = Home()
 const cards = ['STA-02', 'STA-09'].map(id => find(home, node => node.props?.href === `/hikes?trip=${id}`))
