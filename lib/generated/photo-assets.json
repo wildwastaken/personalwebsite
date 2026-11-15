@@ -199,39 +199,6 @@
         }
       ]
     },
-    "iceland-diamond-beach.jpeg": {
-      "fingerprint": "2e5e28cbbcd45c72e98fe700d5c770c7fe84a342eca50b3f8b76d1d3db9feff8",
-      "width": 1067,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/iceland-diamond-beach.jpeg",
-      "placeholder": "#71849b",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-320.webp",
-          "width": 320,
-          "height": 480,
-          "bytes": 16516
-        },
-        {
-          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-640.webp",
-          "width": 640,
-          "height": 960,
-          "bytes": 48242
-        },
-        {
-          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-960.webp",
-          "width": 960,
-          "height": 1440,
-          "bytes": 83620
-        },
-        {
-          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-1600.webp",
-          "width": 1067,
-          "height": 1600,
-          "bytes": 128868
-        }
-      ]
-    },
     "iceland-glacier-friends.jpeg": {
       "fingerprint": "5b2480d00288284d2ab443b18dafe1d7751a0c644f1812b7ea95dbc9385017c6",
       "width": 1600,
@@ -298,6 +265,72 @@
         }
       ]
     },
+    "iceland-river-crossing-drone.jpeg": {
+      "fingerprint": "8558b7e91a10976ba0202e899b1ab72d28e7fd81fed2bb71dfdb08505eab5ab3",
+      "width": 1600,
+      "height": 900,
+      "originalSrc": "/images/gallery/raw/iceland-river-crossing-drone.jpeg",
+      "placeholder": "#575b5c",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-river-crossing-drone-8558b7e91a10-320.webp",
+          "width": 320,
+          "height": 180,
+          "bytes": 5258
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-river-crossing-drone-8558b7e91a10-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 22726
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-river-crossing-drone-8558b7e91a10-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 52670
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-river-crossing-drone-8558b7e91a10-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 181980
+        }
+      ]
+    },
+    "iceland-seljalandsfoss.jpeg": {
+      "fingerprint": "aaff80369dc5cf987df93e067df9309809c136b1d972be34e60a5f038882a33d",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/iceland-seljalandsfoss.jpeg",
+      "placeholder": "#878b8f",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-seljalandsfoss-aaff80369dc5-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 15916
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-seljalandsfoss-aaff80369dc5-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 57666
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-seljalandsfoss-aaff80369dc5-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 111574
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-seljalandsfoss-aaff80369dc5-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 213058
+        }
+      ]
+    },
     "iceland-skogafoss-fav.jpeg": {
       "fingerprint": "5e5709b5fc496052a45e6969061dc5913654e58fc3a3bdb8a3399aa048666085",
       "width": 1600,
@@ -328,6 +361,45 @@
           "width": 1600,
           "height": 1200,
           "bytes": 216354
+        }
+      ]
+    },
+    "iceland-stykkisholmur-drone.jpeg": {
+      "fingerprint": "544177c64273dc3d27d1d4158d49af0b8f805cc37fb6fec962a79f0c46f4ffda",
+      "width": 3200,
+      "height": 617,
+      "originalSrc": "/images/gallery/raw/iceland-stykkisholmur-drone.jpeg",
+      "placeholder": "#67696d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-stykkisholmur-drone-544177c64273-320.webp",
+          "width": 320,
+          "height": 62,
+          "bytes": 2244
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-stykkisholmur-drone-544177c64273-640.webp",
+          "width": 640,
+          "height": 123,
+          "bytes": 6638
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-stykkisholmur-drone-544177c64273-960.webp",
+          "width": 960,
+          "height": 185,
+          "bytes": 13442
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-stykkisholmur-drone-544177c64273-1600.webp",
+          "width": 1600,
+          "height": 309,
+          "bytes": 51534
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-stykkisholmur-drone-544177c64273-2560.webp",
+          "width": 2560,
+          "height": 494,
+          "bytes": 123326
         }
       ]
     },
@@ -460,6 +532,39 @@
           "width": 1200,
           "height": 1600,
           "bytes": 221332
+        }
+      ]
+    },
+    "lake-louise-from-above.jpeg": {
+      "fingerprint": "20c8e9fe202891d3bf3e2922f951b075c731989592b39a62dbe26ab0269f0365",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/lake-louise-from-above.jpeg",
+      "placeholder": "#7d806c",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/lake-louise-from-above-20c8e9fe2028-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 18304
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-from-above-20c8e9fe2028-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 70402
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-from-above-20c8e9fe2028-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 145666
+        },
+        {
+          "src": "/images/gallery/optimized/lake-louise-from-above-20c8e9fe2028-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 412242
         }
       ]
     },
@@ -886,69 +991,30 @@
         }
       ]
     },
-    "peru-machu-picchu-clouds.jpeg": {
-      "fingerprint": "7a3b4612d1f6258019892f6362f065aa2b4b6dd2cdfd682d2b029cc2e23f7251",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/peru-machu-picchu-clouds.jpeg",
-      "placeholder": "#7a878e",
+    "peru-salkantay-dusk-drone.jpeg": {
+      "fingerprint": "40da9d9d006874f6ac2d4927258395defcd895f000eaef0cfb34df7ebb9f9d74",
+      "width": 900,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-salkantay-dusk-drone.jpeg",
+      "placeholder": "#1b1618",
       "variants": [
         {
-          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-320.webp",
+          "src": "/images/gallery/optimized/peru-salkantay-dusk-drone-40da9d9d0068-320.webp",
           "width": 320,
-          "height": 240,
-          "bytes": 5598
+          "height": 569,
+          "bytes": 5784
         },
         {
-          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-640.webp",
+          "src": "/images/gallery/optimized/peru-salkantay-dusk-drone-40da9d9d0068-640.webp",
           "width": 640,
-          "height": 480,
-          "bytes": 21218
+          "height": 1138,
+          "bytes": 18364
         },
         {
-          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-960.webp",
-          "width": 960,
-          "height": 720,
-          "bytes": 45274
-        },
-        {
-          "src": "/images/gallery/optimized/peru-machu-picchu-clouds-7a3b4612d1f6-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 161172
-        }
-      ]
-    },
-    "peru-ollantaytambo-terraces.jpeg": {
-      "fingerprint": "46f295a30a8895a79017b948670428d3508e0890368b17f706114af1a39abc99",
-      "width": 1600,
-      "height": 1200,
-      "originalSrc": "/images/gallery/raw/peru-ollantaytambo-terraces.jpeg",
-      "placeholder": "#6e7e8b",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-320.webp",
-          "width": 320,
-          "height": 240,
-          "bytes": 13908
-        },
-        {
-          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-640.webp",
-          "width": 640,
-          "height": 480,
-          "bytes": 53552
-        },
-        {
-          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-960.webp",
-          "width": 960,
-          "height": 720,
-          "bytes": 112328
-        },
-        {
-          "src": "/images/gallery/optimized/peru-ollantaytambo-terraces-46f295a30a88-1600.webp",
-          "width": 1600,
-          "height": 1200,
-          "bytes": 358590
+          "src": "/images/gallery/optimized/peru-salkantay-dusk-drone-40da9d9d0068-960.webp",
+          "width": 900,
+          "height": 1600,
+          "bytes": 33328
         }
       ]
     },
@@ -1147,6 +1213,39 @@
           "width": 1600,
           "height": 1200,
           "bytes": 221372
+        }
+      ]
+    },
+    "whistler-above-clouds.jpeg": {
+      "fingerprint": "7ddb3554c2071b3a42f0b290d44fc79e26b902f7de8c13c1fcbdffb020862c35",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/whistler-above-clouds.jpeg",
+      "placeholder": "#5f86ad",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/whistler-above-clouds-7ddb3554c207-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 9876
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-above-clouds-7ddb3554c207-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 38014
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-above-clouds-7ddb3554c207-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 82422
+        },
+        {
+          "src": "/images/gallery/optimized/whistler-above-clouds-7ddb3554c207-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 263424
         }
       ]
     },

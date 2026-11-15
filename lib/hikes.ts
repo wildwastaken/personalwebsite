@@ -29,9 +29,8 @@ export const hikes: Hike[] = [
     date: 'Dec 22, 2025',
     lat: -13.1631,
     lng: -72.545,
-    coverImage: '/images/gallery/peru-machu-picchu-clouds.jpeg',
+    coverImage: '/images/gallery/peru-machu-picchu-citadel.jpeg',
     photos: [
-      { src: '/images/gallery/peru-machu-picchu-clouds.jpeg', caption: 'Machu Picchu as the morning clouds lift' },
       { src: '/images/gallery/peru-machu-picchu-citadel.jpeg', caption: 'The citadel and its terraces' },
       { src: '/images/gallery/peru-huayna-picchu-edge.jpeg', caption: 'On top of Huayna Picchu' },
     ],
@@ -69,6 +68,7 @@ export const hikes: Hike[] = [
     photos: [
       { src: '/images/gallery/peru-humantay-lake.jpeg', caption: 'Humantay Lake under the glacier' },
       { src: '/images/gallery/peru-humantay-drone.jpeg', caption: 'The lake from above' },
+      { src: '/images/gallery/peru-salkantay-dusk-drone.jpeg', caption: 'Salkantay at dusk from above camp' },
       { src: '/images/gallery/peru-soraypampa-stars.jpeg', caption: 'Stars over camp that night' },
     ],
     description: 'Up from camp to the glacier lake under Humantay the afternoon before Salkantay. Good for getting used to the altitude.',
@@ -82,10 +82,6 @@ export const hikes: Hike[] = [
     date: 'Dec 20, 2025',
     lat: -13.2559,
     lng: -72.3142,
-    coverImage: '/images/gallery/peru-ollantaytambo-terraces.jpeg',
-    photos: [
-      { src: '/images/gallery/peru-ollantaytambo-terraces.jpeg', caption: 'Looking across the Sacred Valley' },
-    ],
     description: 'From town up past the old Inca quarries to about 3,900 m, for the view back across the valley.',
   },
   {
@@ -100,6 +96,7 @@ export const hikes: Hike[] = [
     coverImage: '/images/gallery/lake-louise-sunrise.jpeg',
     photos: [
       { src: '/images/gallery/lake-louise-sunrise.jpeg', caption: 'Sunrise above Lake Louise' },
+      { src: '/images/gallery/lake-louise-from-above.jpeg', caption: 'Lake Louise from the way down' },
     ],
     description: 'Started at the lake at 5 a.m., up past Mirror Lake and Lake Agnes, sunrise up on the Beehive, and back down by 8:20.',
   },

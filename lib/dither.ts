@@ -30,7 +30,7 @@ export const MOUNTAIN_PRESETS: MountainPreset[] = [
     id: 'machu-picchu',
     name: 'Machu Picchu Citadel',
     location: 'Andean Cloud Forest',
-    imageSrc: '/images/gallery/peru-machu-picchu-clouds.jpeg',
+    imageSrc: '/images/gallery/peru-machu-picchu-citadel.jpeg',
   },
   {
     id: 'lafayette',

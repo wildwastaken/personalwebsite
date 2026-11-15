@@ -28,7 +28,7 @@ async function main() {
       assert.equal(metadata.height, variant.height)
       assert.equal(fs.statSync(file).size, variant.bytes)
       assert.ok(variant.width > previous && variant.width <= asset.width)
-      assert.ok(Math.abs(variant.width / variant.height - asset.width / asset.height) < .01)
+      assert.ok(Math.abs(variant.height - variant.width * asset.height / asset.width) <= 1)
       previous = variant.width
     }
   }
