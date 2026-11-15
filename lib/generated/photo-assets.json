@@ -133,39 +133,6 @@
         }
       ]
     },
-    "emerald-lake-swim.jpeg": {
-      "fingerprint": "00a48a38009ad072712348c96bb88deba8e184efe2d40aed294460dcdfe221bd",
-      "width": 1200,
-      "height": 1600,
-      "originalSrc": "/images/gallery/raw/emerald-lake-swim.jpeg",
-      "placeholder": "#769096",
-      "variants": [
-        {
-          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-320.webp",
-          "width": 320,
-          "height": 427,
-          "bytes": 24036
-        },
-        {
-          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-640.webp",
-          "width": 640,
-          "height": 853,
-          "bytes": 91310
-        },
-        {
-          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-960.webp",
-          "width": 960,
-          "height": 1280,
-          "bytes": 184532
-        },
-        {
-          "src": "/images/gallery/optimized/emerald-lake-swim-00a48a38009a-1600.webp",
-          "width": 1200,
-          "height": 1600,
-          "bytes": 332116
-        }
-      ]
-    },
     "emerald-lake.jpeg": {
       "fingerprint": "7951ac71db7d3de046588023bb4d6a491d20805b6b153fdd0ced5dc188533bf9",
       "width": 1600,

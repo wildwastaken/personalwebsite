@@ -32,7 +32,7 @@ export const hikes: Hike[] = [
     coverImage: '/images/gallery/peru-machu-picchu-citadel.jpeg',
     photos: [
       { src: '/images/gallery/peru-machu-picchu-citadel.jpeg', caption: 'Machu Picchu' },
-      { src: '/images/gallery/peru-huayna-picchu-edge.jpeg', caption: 'On top of Huayna Picchu' },
+      { src: '/images/gallery/peru-huayna-picchu-edge.jpeg', caption: 'Huayna Picchu' },
     ],
     description: 'Through the gates by 6:40, then up the stone stairs of Huayna Picchu, the peak behind the ruins. On top by 9:40.',
   },
@@ -65,7 +65,7 @@ export const hikes: Hike[] = [
     photos: [
       { src: '/images/gallery/peru-humantay-lake.jpeg', caption: 'Humantay Lake' },
       { src: '/images/gallery/peru-humantay-drone.jpeg', caption: 'From the drone' },
-      { src: '/images/gallery/peru-salkantay-dusk-drone.jpeg', caption: 'Salkantay at last light' },
+      { src: '/images/gallery/peru-salkantay-dusk-drone.jpeg', caption: 'Salkantay at dusk' },
       { src: '/images/gallery/peru-soraypampa-stars.jpeg', caption: 'Stars over camp' },
     ],
     description: 'Up from camp to the glacier lake under Humantay the afternoon before Salkantay. Good for getting used to the altitude.',
@@ -92,7 +92,7 @@ export const hikes: Hike[] = [
     lng: -116.2386,
     coverImage: '/images/gallery/lake-louise-sunrise.jpeg',
     photos: [
-      { src: '/images/gallery/lake-louise-sunrise.jpeg', caption: 'Sunrise above Lake Louise' },
+      { src: '/images/gallery/lake-louise-sunrise.jpeg', caption: 'Sunrise' },
       { src: '/images/gallery/lake-louise-from-above.jpeg', caption: 'On the way down' },
     ],
     description: 'Started at the lake at 5 a.m., up past Mirror Lake and Lake Agnes, sunrise up on the Beehive, and back down by 8:20.',
@@ -107,7 +107,7 @@ export const hikes: Hike[] = [
     lng: -19.5001,
     coverImage: '/images/gallery/iceland-skogafoss-fav.jpeg',
     photos: [
-      { src: '/images/gallery/iceland-skogafoss-fav.jpeg', caption: 'Rock arch in the fog' },
+      { src: '/images/gallery/iceland-skogafoss-fav.jpeg', caption: 'Arch in the fog' },
     ],
     description: 'Up the stairs beside Skógafoss and along the river, where there’s a new waterfall every few minutes.',
   },
@@ -121,7 +121,7 @@ export const hikes: Hike[] = [
     lng: -18.1747,
     coverImage: '/images/gallery/iceland.jpeg',
     photos: [
-      { src: '/images/gallery/iceland.jpeg', caption: 'Down into the canyon' },
+      { src: '/images/gallery/iceland.jpeg', caption: 'The canyon' },
     ],
     description: 'Along the rim of a mossy canyon that the river has cut about 100 m deep.',
   },

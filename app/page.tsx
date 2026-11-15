@@ -7,10 +7,10 @@ import PixelScape from '@/components/PixelScape'
 import { getPhotoSources } from '@/lib/photoAssets'
 
 const FEATURED_PHOTOS = [
-  { file: 'peru-huayna-picchu-edge.jpeg', alt: 'On top of Huayna Picchu' },
-  { file: 'lafayette-ridge-fav.jpeg', alt: 'Franconia Ridge, early' },
-  { file: 'peru-salkantay-dusk-drone.jpeg', alt: 'Salkantay at last light' },
-  { file: 'iceland-arnarstapi-arch.jpeg', alt: 'The arch at Arnarstapi' },
+  { file: 'peru-huayna-picchu-edge.jpeg', alt: 'Huayna Picchu' },
+  { file: 'lafayette-ridge-fav.jpeg', alt: 'Franconia Ridge' },
+  { file: 'peru-salkantay-dusk-drone.jpeg', alt: 'Salkantay at dusk' },
+  { file: 'iceland-arnarstapi-arch.jpeg', alt: 'Arnarstapi' },
 ]
 
 interface SpotifyData {
