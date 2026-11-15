@@ -93,7 +93,6 @@ export const hikes: Hike[] = [
     coverImage: '/images/gallery/lake-louise-sunrise.jpeg',
     photos: [
       { src: '/images/gallery/lake-louise-sunrise.jpeg', caption: 'Sunrise' },
-      { src: '/images/gallery/lake-louise-from-above.jpeg', caption: 'On the way down' },
     ],
     description: 'Started at the lake at 5 a.m., up past Mirror Lake and Lake Agnes, sunrise up on the Beehive, and back down by 8:20.',
   },

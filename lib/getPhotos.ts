@@ -60,7 +60,6 @@ const catalog: PhotoMeta[] = [
   { file: 'iceland-glacier-friends.jpeg', ...ICELAND, alt: 'Glacier crew', location: 'Skaftafell, Iceland', date: 'May 2023' },
   { file: 'jasper-rockies-fav.jpeg', ...ROCKIES, alt: 'Chillin on the dock', location: 'Jasper, Alberta', date: 'July 2024', coordinates: '52.7263, -117.6429' },
   { file: 'cape-breton-bonfire-crew.jpeg', ...CAPE_BRETON, alt: 'Beach fire', location: 'Dingwall, Nova Scotia', date: 'July 2026', coordinates: '46.8976, -60.4486' },
-  { file: 'lake-louise-from-above.jpeg', ...ROCKIES, alt: 'Lake Louise', location: 'Lake Louise, Banff', date: 'July 2024', coordinates: '51.4206, -116.2386' },
   { file: 'moraine-lake-fav.jpeg', ...ROCKIES, alt: 'Me at Moraine', location: 'Moraine Lake, Banff', date: 'July 2024', coordinates: '51.3276, -116.1800' },
   { file: 'peru-salkantay-horse-trek.jpeg', ...PERU, alt: 'Riding up', location: 'Salkantay trail', date: 'Dec 2025', coordinates: '-13.3571, -72.5602' },
   { file: 'twinway-view.jpeg', ...WHITES, alt: 'Into the Pemi', location: 'Twinway, NH', date: 'Aug 2024', coordinates: '44.1686, -71.5356' },
