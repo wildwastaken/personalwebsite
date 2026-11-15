@@ -33,6 +33,7 @@ export const hikes: Hike[] = [
     photos: [
       { src: '/images/gallery/peru-machu-picchu-clouds.jpeg', caption: 'Machu Picchu as the morning clouds lift' },
       { src: '/images/gallery/peru-machu-picchu-citadel.jpeg', caption: 'The citadel and its terraces' },
+      { src: '/images/gallery/peru-huayna-picchu-edge.jpeg', caption: 'On top of Huayna Picchu' },
     ],
     description: 'Through the gates by 6:40, then up the stone stairs of Huayna Picchu, the peak behind the ruins. On top by 9:40.',
   },
@@ -64,6 +65,12 @@ export const hikes: Hike[] = [
     date: 'Dec 24, 2025',
     lat: -13.3808,
     lng: -72.5863,
+    coverImage: '/images/gallery/peru-humantay-lake.jpeg',
+    photos: [
+      { src: '/images/gallery/peru-humantay-lake.jpeg', caption: 'Humantay Lake under the glacier' },
+      { src: '/images/gallery/peru-humantay-drone.jpeg', caption: 'The lake from above' },
+      { src: '/images/gallery/peru-soraypampa-stars.jpeg', caption: 'Stars over camp that night' },
+    ],
     description: 'Up from camp to the glacier lake under Humantay the afternoon before Salkantay. Good for getting used to the altitude.',
   },
   {
@@ -165,6 +172,12 @@ export const hikes: Hike[] = [
     date: 'July 31 – Aug 2, 2024',
     lat: 44.1612,
     lng: -71.535,
+    coverImage: '/images/gallery/twinway-view.jpeg',
+    photos: [
+      { src: '/images/gallery/twinway-view.jpeg', caption: 'Looking into the Pemi from the Twinway' },
+      { src: '/images/gallery/galehead-hut.jpeg', caption: 'Made it to Galehead Hut' },
+      { src: '/images/gallery/galehead-sunset.jpeg', caption: 'Sunset from the hut' },
+    ],
     description: 'Three days out of Lincoln Woods: Bondcliff the first evening, a night near Guyot, over South Twin, and a last night at Galehead Hut.',
   },
 ]

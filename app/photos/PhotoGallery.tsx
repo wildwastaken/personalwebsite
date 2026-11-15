@@ -16,6 +16,7 @@ const CATEGORIES = [
   { id: 'iceland', label: 'Iceland' },
   { id: 'white-mountains', label: 'White Mountains' },
   { id: 'whistler', label: 'Whistler' },
+  { id: 'cape-breton', label: 'Cape Breton' },
   { id: 'northeast', label: 'Close to home' },
 ]
 

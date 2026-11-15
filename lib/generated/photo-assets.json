@@ -67,6 +67,204 @@
         }
       ]
     },
+    "cape-breton-bonfire.jpeg": {
+      "fingerprint": "6b86df8444b41105ed08b90d380699b7911034491acd86e3c05e68336d8c905f",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/cape-breton-bonfire.jpeg",
+      "placeholder": "#483424",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 20314
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 70306
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 139976
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-bonfire-6b86df8444b4-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 258310
+        }
+      ]
+    },
+    "cape-breton-coast.jpeg": {
+      "fingerprint": "b5a4ac2871c922f9a2ccfad07735095a37f308bca6b0ad715faae34d57e1e6b1",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/cape-breton-coast.jpeg",
+      "placeholder": "#8a978c",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/cape-breton-coast-b5a4ac2871c9-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 8818
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-coast-b5a4ac2871c9-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 42140
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-coast-b5a4ac2871c9-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 101816
+        },
+        {
+          "src": "/images/gallery/optimized/cape-breton-coast-b5a4ac2871c9-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 354324
+        }
+      ]
+    },
+    "galehead-hut.jpeg": {
+      "fingerprint": "b38e044e325b47176e36f28110252aa5ac4e8056ebdb62e8edfcd5cc1b1a265d",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/galehead-hut.jpeg",
+      "placeholder": "#94917d",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/galehead-hut-b38e044e325b-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 14598
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-hut-b38e044e325b-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 66564
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-hut-b38e044e325b-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 154704
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-hut-b38e044e325b-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 484248
+        }
+      ]
+    },
+    "galehead-sunset.jpeg": {
+      "fingerprint": "2c4a26a57abc427df05ce28aba3e4f4265293a558c1cf38d9075e40e687e6f15",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/galehead-sunset.jpeg",
+      "placeholder": "#5c605f",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 7936
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 30116
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 61672
+        },
+        {
+          "src": "/images/gallery/optimized/galehead-sunset-2c4a26a57abc-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 190906
+        }
+      ]
+    },
+    "iceland-diamond-beach.jpeg": {
+      "fingerprint": "2e5e28cbbcd45c72e98fe700d5c770c7fe84a342eca50b3f8b76d1d3db9feff8",
+      "width": 1067,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/iceland-diamond-beach.jpeg",
+      "placeholder": "#71849b",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-320.webp",
+          "width": 320,
+          "height": 480,
+          "bytes": 16516
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-640.webp",
+          "width": 640,
+          "height": 960,
+          "bytes": 48242
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-960.webp",
+          "width": 960,
+          "height": 1440,
+          "bytes": 83620
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-diamond-beach-2e5e28cbbcd4-1600.webp",
+          "width": 1067,
+          "height": 1600,
+          "bytes": 128868
+        }
+      ]
+    },
+    "iceland-glacier-friends.jpeg": {
+      "fingerprint": "5b2480d00288284d2ab443b18dafe1d7751a0c644f1812b7ea95dbc9385017c6",
+      "width": 1600,
+      "height": 1067,
+      "originalSrc": "/images/gallery/raw/iceland-glacier-friends.jpeg",
+      "placeholder": "#acb9c8",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/iceland-glacier-friends-5b2480d00288-320.webp",
+          "width": 320,
+          "height": 213,
+          "bytes": 10470
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-glacier-friends-5b2480d00288-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 26688
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-glacier-friends-5b2480d00288-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 42600
+        },
+        {
+          "src": "/images/gallery/optimized/iceland-glacier-friends-5b2480d00288-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 102234
+        }
+      ]
+    },
     "iceland-gullfoss-fav.jpeg": {
       "fingerprint": "10eb62e6d260a4912085ed71f2f6dc42b52ed1ebdab7c25b33d76f19b5b35543",
       "width": 1600,
@@ -529,6 +727,99 @@
         }
       ]
     },
+    "peru-huayna-picchu-edge.jpeg": {
+      "fingerprint": "13475bbb59a87e8280961769e730c1a2edb7896d07c9ec44a2c4b07ac21ffdd5",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-huayna-picchu-edge.jpeg",
+      "placeholder": "#7c8679",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-huayna-picchu-edge-13475bbb59a8-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 14732
+        },
+        {
+          "src": "/images/gallery/optimized/peru-huayna-picchu-edge-13475bbb59a8-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 64756
+        },
+        {
+          "src": "/images/gallery/optimized/peru-huayna-picchu-edge-13475bbb59a8-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 146330
+        },
+        {
+          "src": "/images/gallery/optimized/peru-huayna-picchu-edge-13475bbb59a8-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 436736
+        }
+      ]
+    },
+    "peru-humantay-drone.jpeg": {
+      "fingerprint": "ff92f6cc77cf7cb4ef667b5a06446268a5a2d6b5619cd53955992eee388f1455",
+      "width": 900,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-humantay-drone.jpeg",
+      "placeholder": "#384f48",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-humantay-drone-ff92f6cc77cf-320.webp",
+          "width": 320,
+          "height": 569,
+          "bytes": 21346
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-drone-ff92f6cc77cf-640.webp",
+          "width": 640,
+          "height": 1138,
+          "bytes": 76112
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-drone-ff92f6cc77cf-960.webp",
+          "width": 900,
+          "height": 1600,
+          "bytes": 133652
+        }
+      ]
+    },
+    "peru-humantay-lake.jpeg": {
+      "fingerprint": "38a6ea9f81daf7f58961db87551e12af6c9a2861de65f64d7f5d4f473b4802ae",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/peru-humantay-lake.jpeg",
+      "placeholder": "#8a8b86",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-humantay-lake-38a6ea9f81da-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 14788
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-lake-38a6ea9f81da-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 60874
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-lake-38a6ea9f81da-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 131760
+        },
+        {
+          "src": "/images/gallery/optimized/peru-humantay-lake-38a6ea9f81da-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 377854
+        }
+      ]
+    },
     "peru-humantay-trail-horses.jpeg": {
       "fingerprint": "0dedbf545794d86f068129a2c70f775ebc361f1a4344bd0b7e18d8c0052efc1e",
       "width": 1600,
@@ -790,6 +1081,72 @@
           "width": 1200,
           "height": 1600,
           "bytes": 203358
+        }
+      ]
+    },
+    "peru-soraypampa-stars.jpeg": {
+      "fingerprint": "41da4729c36b09800aa5d27c51c83bdafd8b1edb5f131755fd86f9cef150097e",
+      "width": 1200,
+      "height": 1600,
+      "originalSrc": "/images/gallery/raw/peru-soraypampa-stars.jpeg",
+      "placeholder": "#01060f",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/peru-soraypampa-stars-41da4729c36b-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 1850
+        },
+        {
+          "src": "/images/gallery/optimized/peru-soraypampa-stars-41da4729c36b-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 6132
+        },
+        {
+          "src": "/images/gallery/optimized/peru-soraypampa-stars-41da4729c36b-960.webp",
+          "width": 960,
+          "height": 1280,
+          "bytes": 11376
+        },
+        {
+          "src": "/images/gallery/optimized/peru-soraypampa-stars-41da4729c36b-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 22576
+        }
+      ]
+    },
+    "twinway-view.jpeg": {
+      "fingerprint": "e9ecc4466b929d698770e6d9326fcab7a043427d3bae77e3a85f8091ec7a6844",
+      "width": 1600,
+      "height": 1200,
+      "originalSrc": "/images/gallery/raw/twinway-view.jpeg",
+      "placeholder": "#788b8e",
+      "variants": [
+        {
+          "src": "/images/gallery/optimized/twinway-view-e9ecc4466b92-320.webp",
+          "width": 320,
+          "height": 240,
+          "bytes": 8104
+        },
+        {
+          "src": "/images/gallery/optimized/twinway-view-e9ecc4466b92-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 31544
+        },
+        {
+          "src": "/images/gallery/optimized/twinway-view-e9ecc4466b92-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 70236
+        },
+        {
+          "src": "/images/gallery/optimized/twinway-view-e9ecc4466b92-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 221372
         }
       ]
     },
