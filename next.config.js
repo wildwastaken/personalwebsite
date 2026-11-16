@@ -9,6 +9,20 @@ const nextConfig = {
       headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
     }]
   },
+  // Small static apps built from their own repos into public/ (see scripts/sync-apps.sh).
+  rewrites() {
+    const staticApps = ['cooksplit', 'calledit'].map((app) => ({
+      source: `/${app}`,
+      destination: `/${app}/index.html`,
+    }))
+    // Hardcover Wrapped needs a server, so it's its own Vercel project (basePath /wrapped).
+    const wrapped = 'https://hardcover-wrapped.vercel.app'
+    return [
+      ...staticApps,
+      { source: '/wrapped', destination: `${wrapped}/wrapped` },
+      { source: '/wrapped/:path*', destination: `${wrapped}/wrapped/:path*` },
+    ]
+  },
   redirects() {
     return [
       {

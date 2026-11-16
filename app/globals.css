@@ -141,3 +141,8 @@
     border-color: var(--border-ink);
   }
 }
+
+/* Shiki code blocks on project write-ups (dual theme via CSS variables). */
+.code-block pre { background: transparent !important; margin: 0; }
+.code-block .shiki span { color: var(--shiki-light); }
+.dark .code-block .shiki span { color: var(--shiki-dark); }
